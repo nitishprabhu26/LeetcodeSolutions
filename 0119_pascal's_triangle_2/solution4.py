@@ -26,3 +26,5 @@ print(obj.getRow(row))
 # Complexity Analysis:
 # Time complexity : O(k). Each term is calculated once, in constant time.
 # Space complexity : O(k). No extra space required other than that required to hold the output.
+# Further Thoughts
+# The symmetry of a row in Pascal's triangle allows us to get away with computing just half of each row.
