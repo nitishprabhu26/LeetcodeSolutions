@@ -9,3 +9,7 @@ nums = [2, 6, 11, 15]
 target = 8
 obj = Solution()
 print(obj.twoSum(nums, target))
+
+# Complexity Analysis:
+# Time complexity : O(n^2)
+# Space complexity : O(1)
