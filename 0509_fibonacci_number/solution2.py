@@ -11,6 +11,13 @@ class Solution:
             b = sum
         return sum
 
+# class Solution:
+#     def fib(self, n: int) -> int:
+#         a,b = 0,1
+#         for _ in range(n):
+#             a, b = b, a+b
+#         return a 
+
 num1 = 2
 obj = Solution()
 print(obj.fib(num1))
