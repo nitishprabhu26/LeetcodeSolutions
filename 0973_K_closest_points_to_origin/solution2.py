@@ -1,4 +1,5 @@
 # Using heapq and nsmallest function
+# https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/
 import heapq
 
 class Solution:
