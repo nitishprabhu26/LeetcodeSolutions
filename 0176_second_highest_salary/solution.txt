@@ -13,3 +13,11 @@ SELECT Ifnull((SELECT DISTINCT salary
                FROM   employee
                ORDER  BY salary DESC
                LIMIT  1 offset 1), NULL) AS SecondHighestSalary 
+
+------------------------------------------------------------------------
+Extra:
+
+Syntax:     IFNULL(expression, alt_value)
+
+The IFNULL() function returns a specified value if the expression is NULL.
+If the expression is NOT NULL, this function returns the expression.
