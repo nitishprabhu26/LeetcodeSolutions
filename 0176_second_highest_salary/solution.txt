@@ -1,0 +1,15 @@
+Approach 1: Using sub-query and LIMIT clause
+
+SELECT (SELECT DISTINCT salary
+        FROM   employee
+        ORDER  BY salary DESC
+        LIMIT  1 offset 1) AS SecondHighestSalary; 
+
+------------------------------------------------------------------------
+
+Approach 2: Using IFNULL and LIMIT clause
+
+SELECT Ifnull((SELECT DISTINCT salary
+               FROM   employee
+               ORDER  BY salary DESC
+               LIMIT  1 offset 1), NULL) AS SecondHighestSalary 
