@@ -28,7 +28,7 @@ print(obj.intToRoman(num))
 # Time complexity : O(1).
 # As there is a finite set of roman numerals, there is a hard upper limit on how many times the loop can iterate.
 # This upper limit is 15 times, and it occurs for the number 3888, which has a representation of MMMDCCCLXXXVIII.
-# Therefore, we say the time complexity is constant, i.e. O(1)O(1).
+# Therefore, we say the time complexity is constant, i.e. O(1).
 
 # Space complexity : O(1).
 # The amount of memory used does not change with the size of the input integer, and is therefore constant.
