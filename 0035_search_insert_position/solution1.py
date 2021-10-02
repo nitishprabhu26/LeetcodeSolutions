@@ -28,3 +28,17 @@ print(obj.searchInsert(nums, target))
 # Complexity Analysis:
 # Time complexity : O(logN).
 # Space complexity : O(1) since it's a constant space solution.
+
+
+
+# Linear Approach:
+# Not recomended O(n)
+
+# class Solution(object):
+#     def searchInsert(self, nums, target):
+#         """
+#         :type nums: List[int]
+#         :type target: int
+#         :rtype: int
+#         """       
+#         return len([x for x in nums if x<target])
