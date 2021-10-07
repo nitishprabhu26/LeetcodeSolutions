@@ -1,17 +1,20 @@
+# Better approach compared to solution2.py
+
 class Solution:
     def twoSum(self, numbers: [int], target: int) -> [int]:
-        low=0
-        high=len(numbers)-1
-        while(low<high):
-            sum=numbers[low]+numbers[high]
-            if target==sum:
-                return [low+1,high+1]
-            elif sum<target:
+        low = 0
+        high = len(numbers)-1
+        while(low < high):
+            sum = numbers[low]+numbers[high]
+            if target == sum:
+                return [low+1, high+1]
+            elif sum < target:
                 low += 1
             else:
                 high -= 1
 
-nums = [2,7,11,15]
+
+nums = [2, 7, 11, 15]
 target = 9
 obj = Solution()
 print(obj.twoSum(nums, target))
