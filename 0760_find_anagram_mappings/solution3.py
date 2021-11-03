@@ -1,6 +1,6 @@
+from typing import List
 class Solution:
-    def anagramMappings(self, A: [int], B: [int]) -> [int]:
-        result = [0] * len(A)
+    def anagramMappings(self, A: List[int], B: List[int]) -> List[int]:
         return [B.index(A[i]) for i in range(len(A))]
             
 A = [12, 28, 46, 32, 50]
