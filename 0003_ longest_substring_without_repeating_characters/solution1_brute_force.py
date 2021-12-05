@@ -1,3 +1,5 @@
+# https://leetcode.com/problems/longest-substring-without-repeating-characters/solution/
+
 # Doesn't work for one of the long inputs on Leetcode - Time limit exceeded
 # Check all the substring one by one to see if it has no duplicate character.
 
@@ -39,5 +41,6 @@ print(obj.lengthOfLongestSubstring(inp_str))
 
 # Complexity Analysis:
 # Time complexity : O(n^3)
-# Space complexity : O(min(n, m)). We need O(k) space for checking a substring has no duplicate characters, where k is the 
-# size of the Set. The size of the Set is upper bounded by the size of the string n and the size of the charset/alphabet m.
+# Space complexity : O(min(n, m)). We need O(k) space for checking a substring has no duplicate characters, 
+# where k is the size of the Set. The size of the Set is upper bounded by the size of the string n and the 
+# size of the charset/alphabet m.

@@ -31,3 +31,8 @@ nums2.length == n
 0 <= n <= 1000
 1 <= m + n <= 2000
 -106 <= nums1[i], nums2[i] <= 106
+
+
+Pending
+Try this: method1 (issue in solution for even case)
+https://www.geeksforgeeks.org/median-of-two-sorted-arrays-of-different-sizes/
