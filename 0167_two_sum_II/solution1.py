@@ -1,7 +1,10 @@
 # Better approach compared to solution2.py
 
+from typing import List
+
+
 class Solution:
-    def twoSum(self, numbers: [int], target: int) -> [int]:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
         low = 0
         high = len(numbers)-1
         while(low < high):

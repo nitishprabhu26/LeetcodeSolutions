@@ -1,12 +1,15 @@
 # https://leetcode.com/problems/3sum/solution/
 # Approach 1: Two Pointers
-# We will follow the same two pointers pattern as in Two Sum II. It requires the array to be sorted, so we'll do that first.
-# As our BCR is {O}(n^2), sorting the array would not change the overall time complexity.
-# To make sure the result contains unique triplets, we need to skip duplicate values. It is easy to do because repeating
-# values are next to each other in a sorted array.
+# We will follow the same two pointers pattern as in Two Sum II. It requires the array to be sorted, so we'll 
+# do that first. As our BCR is {O}(n^2), sorting the array would not change the overall time complexity.
+# To make sure the result contains unique triplets, we need to skip duplicate values. It is easy to do because 
+# repeating values are next to each other in a sorted array.
+
+from typing import List
+
 
 class Solution:
-    def threeSum(self, nums: [int]) -> [[int]]:
+    def threeSum(self, nums: List[int]) -> List[List[int]]:
         res = []
         nums.sort()
 

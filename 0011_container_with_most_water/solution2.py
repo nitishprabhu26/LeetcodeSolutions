@@ -1,8 +1,9 @@
 # Approach 2: Two Pointer Approach
 # Algorithm:
-# We take two pointers, one at the beginning and one at the end of the array constituting the length of the lines. Futher, we maintain 
-# a variable maxarea to store the maximum area obtained till now. At every step, we find out the area formed between them, update 
-# maxarea and move the pointer pointing to the shorter line towards the other end by one step.
+# We take two pointers, one at the beginning and one at the end of the array constituting the length of the 
+# lines. Futher, we maintain a variable maxarea to store the maximum area obtained till now. At every step, 
+# we find out the area formed between them, update maxarea and move the pointer pointing to the shorter line 
+# towards the other end by one step.
 
 
 class Solution:

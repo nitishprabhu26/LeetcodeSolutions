@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def twoSum(self, numbers: [int], target: int) -> [int]:
+    def twoSum(self, numbers: List[int], target: int) -> List[int]:
         dict = {}
         for i in range(len(numbers)):
                 dict[numbers[i]] = i
