@@ -1,7 +1,11 @@
 # Neetcode solution
 # https://youtu.be/wgFPrzTjm7s
 
+from typing import Optional
+
 # Definition for singly-linked list.
+
+
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
@@ -24,7 +28,7 @@ class Solution:
             carry = val // 10
             val = val % 10
 
-            cur.next = ListNode(val)
+            cur.next = ListNode(val) 
 
             # update ptrs
             cur = cur.next
