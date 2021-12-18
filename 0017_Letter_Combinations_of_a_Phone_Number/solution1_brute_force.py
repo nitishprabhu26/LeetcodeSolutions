@@ -1,5 +1,10 @@
+# Brute force approach (Accepted)
+
+from typing import List
+
+
 class Solution:
-    def letterCombinations(self, digits: str) -> [str]:
+    def letterCombinations(self, digits: str) -> List[str]:
         res = []
         if len(digits) < 1:
             return res

@@ -1,5 +1,8 @@
+from typing import List
+
+
 class Solution:
-    def letterCombinations(self, digits: str) -> [str]:
+    def letterCombinations(self, digits: str) -> List[str]:
         if len(digits) == 0:
             return []
 
