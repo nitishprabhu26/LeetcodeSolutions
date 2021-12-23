@@ -1,6 +1,7 @@
-# Approach #3 (Optimal) [Accepted]
-# When we encounter a non-zero element, we need to swap elements pointed by current and slow pointer, 
-# then advance both pointers. If it's zero element, we just advance current pointer.
+# Neetcode
+# https://youtu.be/aayNRwUN3Do
+# Having 2 pointers, one slow pointer (l) and other fast pointer (r)
+# swapping on encountering a non zero element and also incrementing slow pointer
 
 from typing import List
 
@@ -10,13 +11,11 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        # slow pointer
-        lastNonZeroFoundAt = 0
-
-        for curr in range(len(nums)):
-            if nums[curr] != 0:
-                nums[curr], nums[lastNonZeroFoundAt] = nums[lastNonZeroFoundAt], nums[curr]
-                lastNonZeroFoundAt += 1
+        l = 0
+        for r in range(len(nums)):
+            if nums[r] != 0:
+                nums[l], nums[r] = nums[r], nums[l]
+                l += 1
 
         return nums
 
