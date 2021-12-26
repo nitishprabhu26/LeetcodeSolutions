@@ -9,6 +9,11 @@ Note:
 
 Bit Manipulation : https://youtu.be/NLKQEOgBAnw
 2'c complement : https://youtu.be/4qH4unVtJkE
+
 Bit related: 231, 326, 342, 461, 191
+Left/Right Rotate bits
+https://youtu.be/S2yXCBu3NdQ
+Swap all odd and even bits
+https://youtu.be/GWLCF808oVI
 
 Graph : 207, 210
