@@ -32,6 +32,34 @@ class Solution:
         return TreeNode(val)
 
 
+# OR - minor change in initial condition
+
+# class Solution:
+#     def insertIntoBST(self, root: TreeNode, val: int) -> TreeNode:
+#         if not root:
+#             return TreeNode(val)
+        
+#         node = root
+#         while node:
+#             # insert into the right subtree
+#             if val > node.val:
+#                 # insert right now
+#                 if not node.right:
+#                     node.right = TreeNode(val)
+#                     return root
+#                 else:
+#                     node = node.right
+#             # insert into the left subtree
+#             else:
+#                 # insert right now
+#                 if not node.left:
+#                     node.left = TreeNode(val)
+#                     return root
+#                 else:
+#                     node = node.left
+#         return root
+
+
 root = [4,2,7,1,3]
 val = 5
 obj = Solution()
