@@ -1,6 +1,7 @@
 # Approach 1: Brute Force (Time Limit exceeded)
 # Algorithm:
-# In this case, we will simply consider the area for every possible pair of the lines and find out the maximum area out of those.
+# In this case, we will simply consider the area for every possible pair of the lines and find out the maximum 
+# area out of those.
 
 
 class Solution:
