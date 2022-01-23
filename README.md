@@ -5,7 +5,7 @@ Note:
 
 226: Simple recursion, 2 ways
 867 : Transpose of a matrix
-102, 104: tree
+102, 104, 235, 105: tree
 
 Bit Manipulation : https://youtu.be/NLKQEOgBAnw
 2'c complement : https://youtu.be/4qH4unVtJkE
