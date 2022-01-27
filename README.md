@@ -18,4 +18,4 @@ https://youtu.be/GWLCF808oVI
 
 Graph : 207, 210
 
-Pending: 0312_burst_ballons, 1010, 0008, 1345, 160, 605
+Pending: 0312_burst_ballons, 1010, 0008, 1345, 160, 605.
