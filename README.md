@@ -23,3 +23,5 @@ LRU cache and implement in 139, approach 2
 
 new: 1935 
 
+# Why non local?
+# https://youtu.be/yLdGcj36Cww
