@@ -1,5 +1,5 @@
 class Solution:
-    def singleNumber(self, nums: [int]) -> int:
+    def singleNumber(self, nums):
         dict={}
         for i in nums:
             dict[i]=dict.get(i,0)+1

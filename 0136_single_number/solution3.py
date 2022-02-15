@@ -1,7 +1,9 @@
+# Approach 2: Hash Table
+
 from collections import defaultdict
 
 class Solution:
-    def singleNumber(self, nums: [int]) -> int:
+    def singleNumber(self, nums):
         hash_table = defaultdict(int)
         for i in nums:
             hash_table[i] += 1
@@ -16,5 +18,6 @@ obj = Solution()
 print(obj.singleNumber(nums))
 
 # Complexity Analysis:
-# Time complexity : O(n.1) = O(n). Time complexity of for loop is O(n). Time complexity of hash table (dictionary in python) operation pop is O(1).
+# Time complexity : O(n.1) = O(n). Time complexity of for loop is O(n). Time complexity of hash table (dictionary 
+# in python) operation pop is O(1).
 # Space complexity : O(n). The space required by hash_table is equal to the number of elements in nums.

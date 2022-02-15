@@ -1,8 +1,10 @@
-# Actual solution fo Follow up: 
+# Approach 4: Bit Manipulation : (Actual solution): 
 # Could you implement a solution with a linear runtime complexity and without using extra memory?
+# or
+# Neetcode: https://youtu.be/qMPX1AOa83k
 
 class Solution:
-    def singleNumber(self, nums: [int]) -> int:
+    def singleNumber(self, nums):
         res=0
         for el in nums:
             res ^= el

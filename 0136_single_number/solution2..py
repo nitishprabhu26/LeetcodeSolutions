@@ -1,5 +1,7 @@
+# Approach 1: List operation
+
 class Solution:
-    def singleNumber(self, nums: [int]) -> int:
+    def singleNumber(self, nums):
         list_no_duplicates=[]
         for i in nums:
             if  i not in list_no_duplicates:

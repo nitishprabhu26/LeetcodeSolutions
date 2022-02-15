@@ -1,5 +1,7 @@
+# Approach 3: Math
+
 class Solution:
-    def singleNumber(self, nums: [int]) -> int:
+    def singleNumber(self, nums):
         return 2 * sum(set(nums)) - sum(nums)
             
 
