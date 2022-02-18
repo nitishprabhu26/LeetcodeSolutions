@@ -1,9 +1,11 @@
-# Approach 1: Straight-Forward Approach
+# Nested Loop approach - Neetcode
+# https://youtu.be/p10f-VpO4nE
 
 # Intuition:
-# Since the input list is sorted, we can determine if a node is a duplicate by comparing its value to the node 
-# after it in the list. If it is a duplicate, we change the next pointer of the current node so that it skips the 
-# next node and points directly to the one after the next node.
+# 2 loop approach: Nested loop
+# outer loop - determines where our current pointer is
+# inner loop - deletes the duplicate nodes
+# So, even with nested loop time complexity is still O(n)
 
 from typing import Optional
 
@@ -16,11 +18,11 @@ class Solution:
     def deleteDuplicates(self, head: Optional[ListNode]) -> Optional[ListNode]:
         current = head
         
-        while current and current.next:
-            if current.next.val == current.val:
+        while current:
+            while current.next and current.next.val == current.val:
                 current.next = current.next.next
-            else:
-                current = current.next
+
+            current = current.next
                 
         return head
 
