@@ -1,4 +1,6 @@
 # Approach 2: Two Pointers, Iteration, O(1) Space
+# OR
+# https://youtu.be/_d0T_2Lk2qA
 
 class Solution:
     def reverseString(self, s):
