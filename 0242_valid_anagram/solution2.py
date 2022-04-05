@@ -23,4 +23,5 @@ print(obj.isAnagram(s, t))
 
 # Complexity analysis:
 # Time complexity : O(n). for loop
-# Space complexity : O(n). to store dictionary. but since we have 26 charecters in alphabets, it could be considered as O(1)
+# Space complexity : O(n). to store dictionary. but since we have 26 charecters in alphabets, it could be 
+# considered as O(1)
