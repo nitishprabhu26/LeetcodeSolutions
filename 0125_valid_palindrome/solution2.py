@@ -18,6 +18,7 @@ class Solution:
 
         return True
 
+
 # OR
 
 
@@ -42,6 +43,7 @@ class Solution:
             right -= 1
 
         return True
+
 
 inp = "A man, a plan, a canal: Panama"
 obj = Solution()
