@@ -1,6 +1,5 @@
 from typing import List
 
-
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
         dict = {}
@@ -17,7 +16,7 @@ target = 9
 obj = Solution()
 print(obj.twoSum(nums, target))
 
-# Complexity analysis:
 
+# Complexity analysis:
 # Time complexity : O(n). 
 # Space complexity : O(n). Extra space used.
