@@ -42,4 +42,4 @@ print(obj.twoSumLessThanK(nums, k))
 # Complexity analysis:
 # Time Complexity: O(nlogn) to sort the array and do the binary search for each element.
 # Bisect method works on the concept of binary search -> O(log(n))
-# Space Complexity: O(1).
+# Space Complexity: from O(logn) to O(n), depending on the implementation of the sorting algorithm.

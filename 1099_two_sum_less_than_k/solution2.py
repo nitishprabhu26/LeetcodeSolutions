@@ -63,4 +63,4 @@ print(obj.twoSumLessThanK(nums, k))
 # Complexity analysis:
 # Time Complexity: O(nlogn) to sort the array. The two pointers approach itself is O(n), so the time complexity 
 # would be linear if the input is sorted.
-# Space Complexity: from O(1).
+# Space Complexity: from O(logn) to O(n), depending on the implementation of the sorting algorithm.
