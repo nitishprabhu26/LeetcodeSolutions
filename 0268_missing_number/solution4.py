@@ -23,6 +23,21 @@ class Solution:
             missing ^= i ^ num
         return missing
 
+# OR
+# https://youtu.be/406y4hq66UM
+
+
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        xorArr = 0
+        for i in nums:
+            xorArr ^= i
+        xorAll = 0
+        for i in range(len(nums) + 1):
+            xorAll ^= i
+        return xorArr ^ xorAll
+
+
 
 nums = [9,6,4,2,3,5,7,0,1]
 obj = Solution()
