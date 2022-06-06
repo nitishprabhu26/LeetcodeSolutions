@@ -31,3 +31,7 @@ ASCII and Unicode:
 https://youtu.be/5aJKKgSEUnY
 https://youtu.be/I-pQH_krD0M
 https://youtu.be/ut74oHojxqo
+
+
+Matrix Initialization in Python:
+https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/
