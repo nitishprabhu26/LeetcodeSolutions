@@ -1,8 +1,11 @@
 # Neetcode - Best solution out of all
 # https://youtu.be/73r3KWiEvyk
 
+
+from typing import List
+
 class Solution:
-    def rob(self, nums: [int]) -> int:
+    def rob(self, nums: List[int]) -> int:
         rob1, rob2 = 0,0
         
         # [rob1, rob2, n, n+1 ....]
