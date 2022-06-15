@@ -1,4 +1,6 @@
 # Approach 2: Better Counting
+# OR
+# https://youtu.be/FkjFlNtTzc8
 
 # Approach 2 has the same time and space complexity as Approach 1. Even though they have the same time and space 
 # complexities, Approach 2 is slightly more efficient than the Approach 1. Rather than checking 4 surrounding 
