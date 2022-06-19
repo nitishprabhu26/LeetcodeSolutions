@@ -35,3 +35,7 @@ https://youtu.be/ut74oHojxqo
 
 Matrix Initialization in Python:
 https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/
+
+
+Sort a List using Lambda Expression- Python
+https://youtu.be/zk15irJMms0
