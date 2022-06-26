@@ -39,3 +39,9 @@ https://www.geeksforgeeks.org/python-using-2d-arrays-lists-the-right-way/
 
 Sort a List using Lambda Expression- Python
 https://youtu.be/zk15irJMms0
+
+
+Max Heap in Python
+https://www.geeksforgeeks.org/max-heap-in-python/
+Heap queue (or heapq) in Python
+https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/
