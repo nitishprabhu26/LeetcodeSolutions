@@ -50,4 +50,4 @@ print(obj.findKthLargest(nums, k))
 
 # Complexity Analysis:
 # Time complexity : O(N.logk).
-# Space complexity : (k) to store the heap elements.
+# Space complexity : O(k) to store the heap elements.
