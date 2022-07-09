@@ -1,5 +1,5 @@
 # Approach 1: Heap
-# Using heapq and nlargestt function
+# Using heapq and nlargest function
 # https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/
 
 # Heap approach with O(Nlogk) time complexity. To ensure that O(Nlogk) is always less than O(NlogN), the 
@@ -19,12 +19,11 @@
 # In Python, library heapq provides a method nlargest, which combines the last two steps under the hood and has 
 # the same O(Nlogk) time complexity.
 
+
 from typing import List
 from collections import Counter
 import heapq
 
-
-from collections import Counter
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]: 
         # O(1) time 

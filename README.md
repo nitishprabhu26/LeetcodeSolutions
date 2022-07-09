@@ -45,3 +45,6 @@ Max Heap in Python
 https://www.geeksforgeeks.org/max-heap-in-python/
 Heap queue (or heapq) in Python
 https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/
+Building a heap:
+https://www.geeksforgeeks.org/time-complexity-of-building-a-heap/
+Understanding heap: 347

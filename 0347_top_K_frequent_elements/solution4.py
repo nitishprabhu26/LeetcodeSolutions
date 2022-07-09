@@ -2,10 +2,7 @@
 # https://youtu.be/YPTqKIgVk-k
 
 from typing import List
-from collections import Counter
 
-
-from collections import Counter
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]: 
         # for index of freq, we map counts(frequency) of each value and 
@@ -39,6 +36,6 @@ print(obj.topKFrequent(nums, k))
 
 # Complexity analysis:
 # Time complexity : O(N). Worst case: O(N + N) if all N elements are different and each element occurs once.
-# (i.e iterate through entire input array and then loop n times for index '1' since all elements hae frequency 1)
+# (i.e iterate through entire input array and then loop n times for index '1' since all elements have frequency 1)
 # Space complexity : O(N). Array and hashmap created.
 
