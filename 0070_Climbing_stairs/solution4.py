@@ -1,11 +1,12 @@
 # Approach 4: Fibonacci Number
 
 # Algorithm:
-# In the above approach we have used dp array where dp[i]=dp[i-1]+dp[i-2].
+# In the above approach we have used dp array where dp[i] = dp[i-1] + dp[i-2].
 # It can be easily analysed that dp[i] is nothing but i^{th} fibonacci number.
-# Fib(n)=Fib(n-1)+Fib(n-2)
-# Now we just have to find n^{th} number of the fibonacci series having 1 and 2 their first and second term respectively, i.e.
-# Fib(1)=1 and Fib(2)=2.
+# Fib(n) = Fib(n-1) + Fib(n-2)
+# Now we just have to find n^{th} number of the fibonacci series having 1 and 2 their first and second term 
+# respectively, i.e. Fib(1) = 1 and Fib(2) = 2.
+
 
 class Solution:
     def climbStairs(self, n: int) -> int:
