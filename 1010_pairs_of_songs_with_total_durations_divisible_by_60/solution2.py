@@ -6,15 +6,14 @@
 # time[j]. Assuming that a and b are two elements in the input array time, we have:
 # (a+b) % 60 = 0
 #       ⇓
-# ((a % 60)+(b % 60)) % 60=0
+# ((a % 60)+(b % 60)) % 60 = 0
 #       ⇓
 # Therefore, either
 #   a % 60 = 0
 #   b % 60 = 0,
 #  or
-#   (a % 60)+(b % 60)=60
+#   (a % 60) + (b % 60) = 60
 # Hence, all we need would be finding the pairs of elements in time so they meet these conditions.
-
 
 # Algorithm:
 # We would iterate through the input array time and for each element a, we want to know the number of elements
@@ -33,26 +32,58 @@
 # 1. if a % 60 = 0, add remainders[0] to the result; else, add remainders[60 - t % 60] to the result;
 # 2. update remainders[a % 60].
 
+
 from typing import List
 import collections
 
-
 class Solution:
     def numPairsDivisibleBy60(self, time: List[int]) -> int:
+        # https://docs.python.org/3/library/collections.html
         remainders = collections.defaultdict(int)
         ret = 0
         for t in time:
-            if t % 60 == 0:  # check if a%60==0 && b%60==0
+            if t % 60 == 0:  # check if a % 60 == 0 && b % 60 == 0
                 ret += remainders[0]
-            else:  # check if a%60+b%60==60
-                ret += remainders[60-t % 60]
+            else:  # check if a % 60 + b % 60 == 60
+                ret += remainders[60 -t % 60]
             remainders[t % 60] += 1  # remember to update the remainders
         return ret
+
+
+# OR
+# using regular python dictionary
+
+class Solution:
+    def numPairsDivisibleBy60(self, time: List[int]) -> int:
+        remainders = {}
+        ret = 0
+        for t in time:
+            if t % 60 == 0: # check if a%60==0 && b%60==0
+                ret += remainders.get(0, 0)
+            else: # check if a%60+b%60==60
+                ret += remainders.get(60-t % 60, 0)
+            remainders[t % 60] = remainders.get(t % 60, 0) + 1 # remember to update the remainders
+        return ret
+
+
+# OR
+# Two Sum with K = 60 
+# https://leetcode.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/discuss/256738/JavaC%2B%2BPython-Two-Sum-with-K-60
+
+class Solution:
+    def numPairsDivisibleBy60(self, time: List[int]) -> int:
+        c = [0] * 60
+        res = 0
+        for t in time:
+            res += c[-t % 60]
+            c[t % 60] += 1
+        return res
 
 
 time = [30, 20, 150, 100, 40]
 obj = Solution()
 print(obj.numPairsDivisibleBy60(time))
+
 
 # Complexity Analysis:
 # Time complexity: O(n), when n is the length of the input array, because we would visit each element in

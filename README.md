@@ -41,6 +41,12 @@ Sort a List using Lambda Expression- Python
 https://youtu.be/zk15irJMms0
 
 
+Dictionaries documentation:
+https://docs.python.org/3/library/collections.html
+Using sorted on dictionaries:
+https://towardsdatascience.com/sorting-a-dictionary-in-python-4280451e1637
+
+
 Max Heap in Python
 https://www.geeksforgeeks.org/max-heap-in-python/
 Heap queue (or heapq) in Python
@@ -48,3 +54,4 @@ https://www.geeksforgeeks.org/heap-queue-or-heapq-in-python/
 Building a heap:
 https://www.geeksforgeeks.org/time-complexity-of-building-a-heap/
 Understanding heap: 347
+

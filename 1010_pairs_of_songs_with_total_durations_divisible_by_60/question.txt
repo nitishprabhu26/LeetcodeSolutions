@@ -19,5 +19,5 @@ Explanation: All three pairs have a total duration of 120, which is divisible by
  
 
 Constraints:
-1 <= time.length <= 6 * 104
+1 <= time.length <= 6 * 10^4
 1 <= time[i] <= 500

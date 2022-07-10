@@ -2,7 +2,6 @@
 
 from typing import List
 
-
 class Solution:
     def numPairsDivisibleBy60(self, time: List[int]) -> int:
         ret, n = 0, len(time)
@@ -18,7 +17,8 @@ time = [30,20,150,100,40]
 obj = Solution()
 print(obj.numPairsDivisibleBy60(time))
 
+
 # Complexity Analysis:
 # Time complexity: O(n^2), when n is the length of the input array. For each item in time, we iterate through 
-# the rest of the array to find a qualified complement taking O(n) time.
+# the rest of the array(to the right of item) to find a qualified complement taking O(n) time.
 # Space complexity: O(1).
