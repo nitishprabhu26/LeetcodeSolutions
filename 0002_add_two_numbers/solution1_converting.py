@@ -2,13 +2,12 @@
 # Here we are traversing both the linkedlists, converting them into the values for which we need to find the 
 # sum, now sum them and then later convert back the sum to linked list.
 
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-
-
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         num1 = ""
@@ -36,9 +35,7 @@ obj = Solution()
 print(obj.addTwoNumbers(l1, l2))
 
 
-
 # Complexity Analysis:
-
 # Time complexity : O(max(m,n)+1). Assume that m and n represents the length of l1 and l2 respectively,
 # the algorithm above iterates at most max(m,n) times.
 # Space complexity : O(max(m,n)). The length of the new list is at most max(m,n)+1

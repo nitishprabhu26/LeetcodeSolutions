@@ -1,17 +1,14 @@
 # Neetcode solution
 # https://youtu.be/wgFPrzTjm7s
 
+
 from typing import Optional
 
 # Definition for singly-linked list.
-
-
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-
-
 class Solution:
     def addTwoNumbers(self, l1: ListNode, l2: ListNode) -> ListNode:
         dummy = ListNode()
@@ -42,14 +39,7 @@ class Solution:
 
 
 # alternative if no carry in while loop above
-
 # Definition for singly-linked list.
-class ListNode:
-    def __init__(self, val=0, next=None):
-        self.val = val
-        self.next = next
-
-
 class Solution:
     def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
         dummy = ListNode()
@@ -84,7 +74,6 @@ class Solution:
 
 
 # Complexity Analysis:
-
 # Time complexity : O(max(m,n)). Assume that m and n represents the length of l1 and l2 respectively,
 # the algorithm above iterates at most max(m,n) times.
-# Space complexity : O(max(m,n)). The length of the new list is at most max(m,n)+1
+# Space complexity : O(max(m,n)). The length of the new list is at most max(m,n) + 1
