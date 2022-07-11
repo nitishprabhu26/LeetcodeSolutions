@@ -18,7 +18,7 @@ nums2 = [3, 4]
 obj = Solution()
 print(obj.findMedianSortedArrays(nums1, nums2))
 
+
 # Complexity Analysis:
 # Time complexity : O(n.logn). Sort is used.
-# Space complexity : O(m+n). extra space is used to store the final_array, 
-# and later sorting is applied to it
+# Space complexity : O(m+n). extra space is used to store the final_array, and later sorting is applied.
