@@ -15,11 +15,12 @@
 #                         max = len(s[i:j+1])
 #         return max
 
+
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         def checkAllUnique(start, end):
             chars = [0]*128
-            for i in range(start, end+1):
+            for i in range(start, end + 1):
                 c = s[i]
                 chars[ord(c)] += 1
                 if chars[ord(c)] > 1:

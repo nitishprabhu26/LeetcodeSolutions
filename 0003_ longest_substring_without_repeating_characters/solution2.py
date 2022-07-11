@@ -38,6 +38,7 @@ inp_str = "abcabcbb"
 obj = Solution()
 print(obj.lengthOfLongestSubstring(inp_str))
 
+
 # Complexity Analysis:
 # Time complexity : O(2n) = O(n). In the worst case each character will be visited twice by i and j.
 # Space complexity : O(min(m, n)). Same as the previous approach.
