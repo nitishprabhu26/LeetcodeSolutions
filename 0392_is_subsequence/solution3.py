@@ -62,6 +62,35 @@ class Solution:
         return True
 
 
+# OR
+# greedy match with linear search, instead of using bisect function(binary search).
+
+
+class Solution:
+    def isSubsequence(self, s: str, t: str) -> bool:
+        letter_indices_table = defaultdict(list)
+        for index, letter in enumerate(t):
+            letter_indices_table[letter].append(index)
+
+        curr_match_index = -1
+        for letter in s:
+            if letter not in letter_indices_table:
+                return False  # no match at all, early exit
+            
+            is_matched = False
+            # greedy match with linear search
+            for match_index in letter_indices_table[letter]:
+                if curr_match_index < match_index:
+                    curr_match_index = match_index
+                    is_matched = True
+                    break
+            if not is_matched:
+                return False
+            
+        # consume all characters in the source string
+        return True
+
+
 s = "abc"
 t = "ahbgdc"
 obj = Solution()
