@@ -31,5 +31,4 @@ print(obj.numMatchingSubseq(s, words))
 # Complexity Analysis:
 # Time Complexity: O(words.length ∗ S.length + ∑i words[i].length). For each word, our subseq check on word,
 # words[i] may take time complexity O(S.length + words[i].length).
-# Space Complexity: O(1). (In Java, our space complexity is O(S.length + max(words[i].length)), but can be made to
-# be O(1) with a pointer based implementation.)
+# Space Complexity: O(1).
