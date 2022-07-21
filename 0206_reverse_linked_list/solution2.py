@@ -1,10 +1,15 @@
 # Approach #2 (Recursive) 
-# https://www.youtube.com/watch?v=bOOdi7S5Ar4
+# OR
+# https://youtu.be/bOOdi7S5Ar4
+
+
+from typing import Optional
+
 # Definition for singly-linked list.
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 class Solution:
     def reverseList(self, head: ListNode) -> ListNode:
         if not head or not head.next:
@@ -14,9 +19,33 @@ class Solution:
         head.next = None
         return p
 
+
+# OR
+# Neetcode: https://youtu.be/G0_I-ZF0S38
+
+# Definition for singly-linked list.
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head:
+            return None
+        
+        newHead = head
+        if head.next:
+            newHead = self.reverseList(head.next)
+            head.next.next = head    
+        head.next = None
+         
+        return newHead
+
+
 nums = [1,2,3,4,5]
 obj = Solution()
 print(obj.reverseList(nums))
+
 
 # Complexity analysis:
 # Time complexity : O(n). Assume that n is the list's length, the time complexity is O(n).
