@@ -1,7 +1,9 @@
 # Double for loop:
 
+from typing import List
+
 class Solution:
-    def searchMatrix(self, matrix: [[int]], target: int) -> bool:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
         for row in matrix:
             for value in row:
                 if value > target:
