@@ -20,5 +20,5 @@ print(obj.searchMatrix(matrix, target))
 
 
 # Complexity Analysis:
-# Time complexity : O(N^2)
+# Time complexity : O(m.n)
 # Space complexity : O(1) No extra space used
