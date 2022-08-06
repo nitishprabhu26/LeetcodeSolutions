@@ -33,8 +33,22 @@ class Logger:
             return True
         else:
             return False
-        
 
+
+# OR
+# https://leetcode.com/problems/logger-rate-limiter/discuss/83273/Short-C%2B%2BJavaPython-bit-different
+
+
+class Logger:
+    def __init__(self):
+        self._msg_dict = {}
+        
+    def shouldPrintMessage(self, timestamp: int, message: str) -> bool:
+        if timestamp < self._msg_dict.get(message, 0):
+            return False
+        self._msg_dict[message] = timestamp + 10
+        return True
+        
 
 # Your Logger object will be instantiated and called as such:
 # obj = Logger()
