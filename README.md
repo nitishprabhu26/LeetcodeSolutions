@@ -25,8 +25,9 @@ new: 1935
 
 # Why non local?
 # https://youtu.be/yLdGcj36Cww
+Global Variable:
+https://www.w3schools.com/python/python_variables_global.asp
 
- 
 ASCII and Unicode:
 https://youtu.be/5aJKKgSEUnY
 https://youtu.be/I-pQH_krD0M
