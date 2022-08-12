@@ -1,44 +1,33 @@
-# Approach 1: Binary Search
+# Linear Approach:[Passed]
+# Not recomended O(n)
+
+
+from typing import List
 
 class Solution:
-    def searchInsert(self, nums: [int], target: int) -> int:
-        left, right = 0, len(nums)-1
-
-        while left <= right:
-            mid = left + (right-left)//2
-
-            if nums[mid] == target:
-                return mid
-
-            if nums[mid] < target:
-                left = mid+1
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        res_index = 0
+        for i in range(len(nums)):
+            if nums[i] < target:
+                res_index = i + 1
             else:
-                right = mid-1
+                break
+        
+        return res_index
 
-        return left
+# OR
+
+class Solution:
+    def searchInsert(self, nums: List[int], target: int) -> int:
+        return len([x for x in nums if x < target])
 
 
 nums = [1, 3, 5, 6]
-# target = 9
-target = 0
+target = 5
 obj = Solution()
 print(obj.searchInsert(nums, target))
 
 
 # Complexity Analysis:
-# Time complexity : O(logN).
+# Time complexity : O(N).
 # Space complexity : O(1) since it's a constant space solution.
-
-
-
-# Linear Approach:
-# Not recomended O(n)
-
-# class Solution(object):
-#     def searchInsert(self, nums, target):
-#         """
-#         :type nums: List[int]
-#         :type target: int
-#         :rtype: int
-#         """       
-#         return len([x for x in nums if x<target])
