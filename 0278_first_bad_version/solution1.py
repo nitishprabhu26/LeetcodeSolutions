@@ -1,11 +1,9 @@
 # Approach #1 (Linear Scan) [Time Limit Exceeded]
+# The straight forward way is to brute force it by doing a linear scan.
 
-# so we go with:
-# Approach #2 (Binary Search) [Accepted]
 
 # The isBadVersion API is already defined for you.
-# @param version, an integer
-# @return an integer
+# def isBadVersion(version: int) -> bool:
 
 def isBadVersion(version):
     #defined by leetcode
@@ -13,30 +11,19 @@ def isBadVersion(version):
     pass
 
 class Solution:
-    def firstBadVersion(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        left = 1
-        right = n
-        mid = 0
-        while left <= right:
-            mid = left + (right-left) // 2
-            
-            if isBadVersion(mid):
-                right = mid-1
-            else:
-                left = mid + 1
-        return left
+    def firstBadVersion(self, n: int) -> int:
+        for i in range(1, n):
+            if isBadVersion(i):
+                return i
+        return n
 
 
 n = 5
 obj = Solution()
 print(obj.firstBadVersion(n))
 
-# https://leetcode.com/problems/first-bad-version/solution/
 
 # Complexity analysis:
-# Time complexity : O(logn). The search space is halved each time, so the time complexity is O(logn).
+# Time complexity : O(n). Assume that isBadVersion(version) takes constant time to check if a version is bad. It 
+# takes at most n - 1 checks, therefore the overall time complexity is O(n).
 # Space complexity : O(1).
