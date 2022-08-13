@@ -1,6 +1,7 @@
 # Alternative without deque or list reversal
 # https://leetcode.com/problems/squares-of-a-sorted-array/discuss/222079/Python-O(N)-10-lines-two-solutions-explained-beats-100
 
+
 class Solution:
     def sortedSquares(self, nums: int) -> int:
         answer = [0] * len(nums)
