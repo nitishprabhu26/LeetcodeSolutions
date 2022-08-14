@@ -1,9 +1,11 @@
 # Approach #3 (Optimal) [Accepted]
 # When we encounter a non-zero element, we need to swap elements pointed by current and slow pointer, 
 # then advance both pointers. If it's zero element, we just advance current pointer.
+# OR
+# Neetcode: https://youtu.be/aayNRwUN3Do
+
 
 from typing import List
-
 
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:

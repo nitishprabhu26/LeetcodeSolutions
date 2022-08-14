@@ -1,7 +1,7 @@
 # Approach #2 (Space Optimal, Operation Sub-Optimal) [Accepted]
 
-from typing import List
 
+from typing import List
 
 class Solution:
     def moveZeroes(self, nums: List[int]) -> None:
@@ -25,6 +25,7 @@ class Solution:
 nums = [0, 9, 0, 7, 0, 0, 1, 0, 3, 12]
 obj = Solution()
 print(obj.moveZeroes(nums))
+
 
 # Complexity Analysis:
 # Time Complexity: O(n). However, the total number of operations are still sub-optimal. The total operations 
