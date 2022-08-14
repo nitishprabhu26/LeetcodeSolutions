@@ -5,6 +5,7 @@
 
 
 import math
+from typing import Optional
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -32,14 +33,12 @@ class Solution:
         return True
 
 
-
 root = [5,1,4,None,None,3,6]
 obj = Solution()
 print(obj.isValidBST(root))
 
 
-# Complexity Analysis
-
+# Complexity Analysis:
 # Time complexity : O(N) since we visit each node exactly once.
 # Space complexity : O(N) since we keep up to the entire tree.(in case of a skewed tree)
 

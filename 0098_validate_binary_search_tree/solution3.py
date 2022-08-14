@@ -13,7 +13,7 @@
 
 
 import math
-
+from typing import Optional
 # Definition for a binary tree node.
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
@@ -41,8 +41,7 @@ obj = Solution()
 print(obj.isValidBST(root))
 
 
-# Complexity Analysis
-
+# Complexity Analysis:
 # Time complexity : O(N) in the worst case when the tree is a BST or the "bad" element is a rightmost leaf.
 # Space complexity : O(N) for the space on the run-time stack.(in case of a skewed tree)
 
