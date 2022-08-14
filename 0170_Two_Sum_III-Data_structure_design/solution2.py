@@ -1,5 +1,6 @@
 # Approach 2: HashTable
 
+
 class TwoSum(object):
 
     def __init__(self):
@@ -23,6 +24,7 @@ class TwoSum(object):
         
         return False
 
+
 # Your TwoSum object will be instantiated and called as such:
 number = [1, 3, 5]
 target_1 = 4
@@ -34,10 +36,11 @@ for i in number:
 print(obj.find(target_1))
 print(obj.find(target_2))
 
-# Complexity Analysis:
 
+# Complexity Analysis:
 # Time Complexity:
 # For the add(number) function: O(1), since it takes a constant time to update an entry in hashtable.
-# For the find(value) function: O(N), where N is the total number of unique numbers. In the worst case, we would iterate through the 
-# entire table.
-# Space Complexity: O(N), where N is the total number of unique numbers that we will see during the usage of the data structure.
+# For the find(value) function: O(N), where N is the total number of unique numbers. In the worst case, we would 
+# iterate through the entire table.
+# Space Complexity: O(N), where N is the total number of unique numbers that we will see during the usage of the 
+# data structure.
