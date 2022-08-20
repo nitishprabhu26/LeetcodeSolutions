@@ -1,6 +1,6 @@
 # Approach 2: Reverse the Whole String and Then Reverse Each Word
 # Benefits: could be done in-place for the languages with mutable strings.
-# for Java/Python (= immutable strings)
+# for Java/Python (= immutable strings) and C++ (= mutable strings).
 
 # In the case of immutable strings one has first to convert string into mutable data structure, and hence it makes 
 # sense to trim all spaces during that conversion.
