@@ -1,6 +1,6 @@
 # Approach 1: Linear-time Slice Using Substring + HashSet (Extra)
-
 # https://youtu.be/89ksiltE4bQ
+
 
 from typing import List
 from collections import Counter
@@ -15,8 +15,8 @@ class Solution:
             
         return [key for key, vals in d.items() if vals > 1]
 
-# OR
 
+# OR
 # https://youtu.be/uTmB_l-slQY
 
 class Solution:
@@ -31,6 +31,7 @@ class Solution:
             lookup.add(s[i - 10 : i])
         
         return list(output)
+
 
 # OR (using counter object)
 
