@@ -12,7 +12,7 @@ class Solution:
                 r += 1
                 l = r
 
-        # Once the loop ends, we have the last word unproccessed.
+        # Once the loop ends, we have the last word unprocessed.
         # Need to add it manually.
         # adding an extra space to 'res' before reversing the last substring
         res += " "
@@ -25,6 +25,7 @@ class Solution:
 s = "Let's take LeetCode contest"
 obj = Solution()
 print(obj.reverseWords(s))
+
 
 # Complexity analysis:
 # Time complexity : O(n).
