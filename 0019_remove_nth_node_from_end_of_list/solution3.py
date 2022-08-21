@@ -1,13 +1,14 @@
-# https://youtu.be/XVuQxVej6y8
 # Neetcode
+# https://youtu.be/XVuQxVej6y8
+
+
+from typing import Optional
 
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
         self.val = val
         self.next = next
-
-
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
         dummy = ListNode(0, head)
@@ -34,6 +35,8 @@ n = 2
 obj = Solution()
 print(obj.removeNthFromEnd(head, n))
 
+
 # Complexity Analysis:
-# Time complexity : O(L).The algorithm makes one traversal of the list of L nodes. Therefore time complexity is O(L).
+# Time complexity : O(L).
+# The algorithm makes one traversal of the list of L nodes. Therefore time complexity is O(L).
 # Space complexity : O(1). We only used constant extra space.
