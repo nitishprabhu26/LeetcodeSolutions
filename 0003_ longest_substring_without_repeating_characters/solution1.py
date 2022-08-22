@@ -1,20 +1,23 @@
+# Approach 1: Brute Force [Time limit exceeded]
 # https://leetcode.com/problems/longest-substring-without-repeating-characters/solution/
 
-# Doesn't work for one of the long inputs on Leetcode - Time limit exceeded
+# Intuition:
 # Check all the substring one by one to see if it has no duplicate character.
 
-# class Solution:
-#     def lengthOfLongestSubstring(self, s: str) -> int:
-#         if s == "":
-#             return 0
-#         max = 1
-#         for i in range(len(s)):
-#             for j in range(i+1, len(s)):
-#                 if len(s[i:j+1]) == len(set(s[i:j+1])):
-#                     if len(s[i:j+1]) > max:
-#                         max = len(s[i:j+1])
-#         return max
 
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        if s == "":
+            return 0
+        max = 1
+        for i in range(len(s)):
+            for j in range(i+1, len(s)):
+                if len(s[i:j+1]) == len(set(s[i:j+1])):
+                    if len(s[i:j+1]) > max:
+                        max = len(s[i:j+1])
+        return max
+
+# OR
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
