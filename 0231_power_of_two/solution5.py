@@ -12,8 +12,8 @@
 
 # for a power of 2 number, ceil and floor of the number are the same
 
-import math
 
+import math
 
 class Solution:
     def isPowerOfTwo(self, n: int) -> bool:
@@ -29,6 +29,7 @@ n = -16
 # n = 3
 obj = Solution()
 print(obj.isPowerOfTwo(n))
+
 
 # Complexity analysis:
 # Time complexity : O(1)
