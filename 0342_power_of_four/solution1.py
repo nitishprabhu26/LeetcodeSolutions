@@ -1,4 +1,4 @@
-# Approach 1: Loop Iteration
+# Approach: Loop Iteration
 
 
 class Solution:
@@ -9,11 +9,13 @@ class Solution:
             n /= 4
         return n == 1
 
+
 n = 16
 # n = 5
 # n = 1
 obj = Solution()
 print(obj.isPowerOfFour(n))
+
 
 # Complexity Analysis
 # Time complexity : O(logb(n)). In our case that is O(log4(n)). 
