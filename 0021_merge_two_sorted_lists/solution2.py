@@ -31,12 +31,11 @@ class Solution:
         while l1 and l2:
             if l1.val <= l2.val:
                 prev.next = l1
-                l1=l1.next
+                l1 = l1.next
             else:
-                l1.val>=l2.val
                 prev.next = l2
-                l2=l2.next
-            prev=prev.next
+                l2 = l2.next
+            prev = prev.next
             
         # At least one of l1 and l2 can still have nodes at this point, so connect
         # the non-null list to the end of the merged list.
@@ -49,6 +48,7 @@ list1 = [1,2,4]
 list2 = [1,3,4]
 obj = Solution()
 print(obj.mergeTwoLists(list1, list2))
+
 
 # Complexity Analysis:
 # Time complexity : O(n+m)
