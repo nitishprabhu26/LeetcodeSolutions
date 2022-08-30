@@ -2,7 +2,6 @@
 # OR
 # Neetcode: https://youtu.be/yOzXms1J6Nk
 
-
 # Algorithm:
 # Copying the Linked List into an Array.
 # Checking whether or not the Array is a palindrome.
@@ -25,12 +24,6 @@ class Solution(object):
 
 # OR
 
-
-# Definition for singly-linked list.
-# class ListNode(object):
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
 class Solution(object):
     def isPalindrome(self, head):
         nums = []
