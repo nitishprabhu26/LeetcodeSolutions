@@ -11,7 +11,7 @@ class Solution:
     def convert(self, s: str, numRows: int) -> str:
         if numRows == 1: return s
         
-        # wrong way: refers each suarray to same memory
+        # wrong way: refers each subarray to same memory
         # rows = [[]] * min(len(s), numRows)
         # rows[0].append(1)
         # print(rows) - [[1], [1], [1]]
@@ -34,6 +34,7 @@ class Solution:
         for row in rows:
             res += ''.join(row)
         return res
+
 
 # OR
 
