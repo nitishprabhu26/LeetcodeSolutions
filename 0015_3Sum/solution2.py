@@ -54,6 +54,7 @@ class Solution:
                 res.append([nums[i], nums[lo], nums[hi]])
                 # below line is optional, will get solved in the next loop. 
                 # consider eg: [-2,-2,0,2,2] and lo,hi at indices 0 and 4
+                # update any one pointer, above 'if' conditions will take care of the other
                 # hi -= 1
                 lo += 1
                 while lo < hi and nums[lo] == nums[lo-1]:
@@ -81,6 +82,7 @@ class Solution:
                     l += 1
                 else:
                     res.append([a, nums[l], nums[r]])
+                    # update any one pointer, above 'if' conditions will take care of the other
                     l += 1
                     while nums[l] == nums[l - 1] and l < r:
                         l += 1

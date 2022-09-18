@@ -9,14 +9,14 @@
 # The algorithm is similar to the hashset approach above. We just need to add few optimizations so that it works 
 # efficiently for repeated values:
 # 1. Use another hashset dups to skip duplicates in the outer loop.
-#   - Without this optimization, the submission will time out for the test case with 3,000 zeroes. This case is 
-#     handled naturally when the array is sorted.
+#    -  Without this optimization, the submission will time out for the test case with 3,000 zeroes. This case is 
+#       handled naturally when the array is sorted.
 # 2. Instead of re-populating a hashset every time in the inner loop, we can use a hashmap and populate it once. 
-# Values in the hashmap will indicate whether we have encountered that element in the current iteration. When we 
-# process nums[j] in the inner loop, we set its hashmap value to i. This indicates that we can now use nums[j] as 
-# a complement for nums[i].
-#   - This is more like a trick to compensate for container overheads. The effect varies by language, e.g. for C++ 
-#     it cuts the runtime in half. Without this trick the submission may time out.
+#    Values in the hashmap will indicate whether we have encountered that element in the current iteration. When 
+#    we process nums[j] in the inner loop, we set its hashmap value to i. This indicates that we can now use 
+#    nums[j] as a complement for nums[i].
+#    -  This is more like a trick to compensate for container overheads. The effect varies by language, e.g. for 
+#       C++ it cuts the runtime in half. Without this trick the submission may time out.
 
 
 from typing import List

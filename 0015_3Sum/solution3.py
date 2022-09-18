@@ -55,6 +55,7 @@ class Solution:
             seen.add(nums[j])
             j += 1
 
+
 inp_nums = [-1,0,1,2,-1,-4]
 obj = Solution()
 print(obj.threeSum(inp_nums))
