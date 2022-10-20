@@ -1,12 +1,15 @@
-# Approach 3: Built-in Functions to Construct 1-bits Bitmask
+# https://leetcode.com/problems/complement-of-base-10-integer/solution/
 
+# Approach 3: Built-in Functions to Construct 1-bits Bitmask
 # Approach 2 could be rewritten with the help of built-in functions: bit_length in Python
+
 
 import math
 
 class Solution:
     def bitwiseComplement(self, N: int) -> int:
         return (1 << N.bit_length()) - 1 - N if N else 1
+        
         
 n = 5
 obj = Solution()

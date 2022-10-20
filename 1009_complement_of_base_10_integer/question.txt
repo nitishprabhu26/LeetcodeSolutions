@@ -21,4 +21,4 @@ Explanation: 10 is "1010" in binary, with complement "0101" in binary, which is 
  
 
 Constraints:
-0 <= n < 109
+0 <= n < 10^9
