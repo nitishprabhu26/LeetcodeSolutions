@@ -57,6 +57,9 @@ Building a heap:
 https://www.geeksforgeeks.org/time-complexity-of-building-a-heap/
 Understanding heap: 347
 
+Regex:
+459. Repeated Substring Pattern (Pending basics)
+
 
 The Four Basic Properties of Logs
 1. log_b(x.y) = log_b(x) + log_b(y).
