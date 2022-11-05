@@ -1,5 +1,11 @@
 # Approach 2: Hash Table
 
+# Algorithm:
+# We use hash table to avoid the O(n) time required for searching the elements.
+# - Iterate through all elements in nums and set up key/value pair.
+# - Return the element which appeared only once.
+
+
 from collections import defaultdict
 
 class Solution:
@@ -16,6 +22,7 @@ class Solution:
 nums = [4,1,2,1,2]
 obj = Solution()
 print(obj.singleNumber(nums))
+
 
 # Complexity Analysis:
 # Time complexity : O(n.1) = O(n). Time complexity of for loop is O(n). Time complexity of hash table (dictionary 

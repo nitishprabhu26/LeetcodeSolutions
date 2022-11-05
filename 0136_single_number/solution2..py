@@ -1,19 +1,28 @@
 # Approach 1: List operation
 
+# Algorithm:
+# - Iterate over all the elements in nums.
+# - If some number in nums is new to array, append it.
+# - If some number is already in the array, remove it.
+
+
 class Solution:
     def singleNumber(self, nums):
         list_no_duplicates=[]
+
         for i in nums:
-            if  i not in list_no_duplicates:
+            if i not in list_no_duplicates:
                 list_no_duplicates.append(i)
             else:
                 list_no_duplicates.remove(i)
+
         return list_no_duplicates.pop()
             
             
 nums = [4,1,2,1,2]
 obj = Solution()
 print(obj.singleNumber(nums))
+
 
 # Complexity Analysis:
 # Time complexity : O(n^2). We iterate through nums, taking O(n) time. We search the whole list to find whether 
