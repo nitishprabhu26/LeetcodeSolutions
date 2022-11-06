@@ -1,5 +1,9 @@
 # Approach 3: Bitwise Operators : NOT, AND and XOR (Non Intuitive)
 # https://leetcode.com/problems/single-number-ii/solution/
+# OR
+# https://youtu.be/cOFAmaMBVps?t=476 (explaination)
+# seen_once: Keeps the elements which will repeat only once.
+# seen_twice: Keeps the elements which will repeat only twice.
 
 
 from typing import List
