@@ -1,5 +1,7 @@
 # Approach 1: Stacks
 # https://leetcode.com/problems/valid-parentheses/solution/
+# OR
+# https://youtu.be/WTzjTskDFMg (Similar)
 
 
 # Algorithm:
