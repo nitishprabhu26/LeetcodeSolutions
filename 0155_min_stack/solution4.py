@@ -2,8 +2,6 @@
 # https://youtu.be/qkLl7nAwDPo
 
 
-from typing import List
-
 class MinStack:
 
     def __init__(self):
