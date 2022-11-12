@@ -48,10 +48,34 @@ class Solution:
         
         return sentinel.next
 
+
+# OR
+# without using sentinel node: to handle the case where head node is equal to value
+# https://youtu.be/gfFn-OXxcgU
+
+class Solution:
+    def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
+        # Case: where head node(or first few nodes is/are equal to cal; and are to be removed)
+        # so we skip to the point where head node doesnt equal to val, and then set it as head node
+        while head and head.val == val:
+            head = head.next
+            
+        # Now head node is not equal to val
+        cur = head
+        while cur and cur.next:
+            if cur.next.val == val:
+                cur.next = cur.next.next
+            else:
+                cur = cur.next
+                
+        return head
+
+
 head = [1,2,6,3,4,5,6]
 val = 6
 obj = Solution()
 print(obj.removeElements(head, val))
+
 
 # Complexity analysis:
 # Time complexity : O(n), it's one pass solution.

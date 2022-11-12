@@ -1,4 +1,6 @@
 # Approach : Recursion
+# https://youtu.be/YIng7Pf6oa4?t=317 (explaination)
+
 
 from typing import Optional
 
@@ -18,10 +20,12 @@ class Solution:
                 return node
         return rec(head, val)
 
+
 head = [1,2,6,3,4,5,6]
 val = 6
 obj = Solution()
 print(obj.removeElements(head, val))
+
 
 # Complexity analysis:
 # Time complexity : O(n).
