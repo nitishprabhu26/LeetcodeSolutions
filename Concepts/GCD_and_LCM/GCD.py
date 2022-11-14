@@ -8,7 +8,7 @@
 # Approach 1: For finding the GCD of two numbers we will first find the minimum of the two numbers and then find 
 # the highest common factor of that minimum which is also the factor of the other number.
 
-def gcd(a, b):
+def gcd1(a, b):
     # Find minimum of a and b
     result = min(a, b)
   
@@ -23,7 +23,7 @@ def gcd(a, b):
 
 num1 = 98
 num2 = 56
-print(f"Approach 1: GCD of {num1} and {num2} is {gcd(num1, num2)}")
+print(f"Approach 1: GCD of {num1} and {num2} is {gcd1(num1, num2)}")
 
 
 # Time Complexity : O(min(a,b)).
@@ -36,7 +36,7 @@ print(f"Approach 1: GCD of {num1} and {num2} is {gcd(num1, num2)}")
 # purpose. The idea is, GCD of two numbers doesn’t change if a smaller number is subtracted from a bigger number.
 
 # Recursive function to return gcd of a and b
-def gcd(a, b):
+def gcd2(a, b):
   
     # Everything divides 0
     if (a == 0):
@@ -50,13 +50,13 @@ def gcd(a, b):
   
     # a is greater
     if (a > b):
-        return gcd(a-b, b)
-    return gcd(a, b-a)
+        return gcd2(a-b, b)
+    return gcd2(a, b-a)
 
 
 num1 = 98
 num2 = 56
-print(f"Approach 2: GCD of {num1} and {num2} is {gcd(num1, num2)}")
+print(f"Approach 2: GCD of {num1} and {num2} is {gcd2(num1, num2)}")
 
 
 # Time Complexity : O(min(a,b)).
@@ -69,17 +69,17 @@ print(f"Approach 2: GCD of {num1} and {num2} is {gcd(num1, num2)}")
 # subtraction here. we continuously divide the bigger number by the smaller number.
 
 # Recursive function to return gcd of a and b
-def gcd(a,b):
+def gcd3(a,b):
       
     # Everything divides 0 
     if (b == 0):
          return a
-    return gcd(b, a%b)
+    return gcd3(b, a%b)
 
 
 num1 = 98
 num2 = 56
-print(f"Approach 3: GCD of {num1} and {num2} is {gcd(num1, num2)}")
+print(f"Approach 3: GCD of {num1} and {num2} is {gcd3(num1, num2)}")
 
 
 # Time Complexity : O(log(min(a,b)).
@@ -99,7 +99,7 @@ print(f"Approach 3: GCD of {num1} and {num2} is {gcd(num1, num2)}")
 # i.e. num1 will be 48, num2 will be 36
 
 # Iterative function to return gcd of a and b
-def gcd(n1,n2):
+def gcd4(n1,n2):
     # n1 is dividend and n2 is divisor
     while n1 % n2 != 0:
         rem = n1 % n2
@@ -111,7 +111,7 @@ def gcd(n1,n2):
 
 num1 = 48
 num2 = 36
-print(f"Approach 4: GCD of {num1} and {num2} is {gcd(num1, num2)}")
+print(f"Approach 4: GCD of {num1} and {num2} is {gcd4(num1, num2)}")
 
 
 # Time Complexity : O(log(min(a,b)).
@@ -125,7 +125,7 @@ print(f"Approach 4: GCD of {num1} and {num2} is {gcd(num1, num2)}")
 
 
 # Iterative function to return gcd of a and b
-def gcd(n1,n2):
+def gcd5(n1,n2):
     # find the min number amongst n1 and n2
     min_num = min(n1, n2)
     gcd = 1
@@ -140,7 +140,7 @@ def gcd(n1,n2):
 
 num1 = 48
 num2 = 36
-print(f"Approach 5: GCD of {num1} and {num2} is {gcd(num1, num2)}")
+print(f"Approach 5: GCD of {num1} and {num2} is {gcd5(num1, num2)}")
 
 
 # Time Complexity : O(min(a,b).
