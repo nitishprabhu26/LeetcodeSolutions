@@ -147,3 +147,6 @@ print(f"Approach 5: GCD of {num1} and {num2} is {gcd5(num1, num2)}")
 # Auxiliary Space : O(1).
 
 # ----------------------------------------------------------------------------------------------------------------
+
+# GCD of more than two (or array) numbers:
+# https://www.geeksforgeeks.org/gcd-two-array-numbers/

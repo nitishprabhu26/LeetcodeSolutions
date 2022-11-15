@@ -32,20 +32,8 @@ print('LCM of', num1, 'and', num2, 'is', lcm1(num1, num2))
 
 # ----------------------------------------------------------------------------------------------------------------
 
-# Iterative function to return gcd of a and b
-def gcd5(n1,n2):
-    # find the min number amongst n1 and n2
-    min_num = min(n1, n2)
-    gcd = 1
 
-    # loop from 1 to min_num and see if both n1 and n2 are divisible; if so then update gcd
-    for i in range(1, min_num + 1):
-        if n1 % i == 0 and n2 % i == 0:
-            gcd = i
-            
-    return gcd
-
-# Approach 2: Loop
+# Approach 2: While Loop
 # https://youtu.be/hSTZ4Pi51lI
 
 
