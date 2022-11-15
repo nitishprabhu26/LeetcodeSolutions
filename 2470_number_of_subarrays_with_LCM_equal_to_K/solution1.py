@@ -1,4 +1,14 @@
 # Approach: O(N^2) approach
+# https://youtu.be/3eVYlm2p2_o
+
+# We need to remember the following, (for the break out condition)
+# eg: LCM of (9, 18) = 18
+# If we add any new element (3rd element) to array, the new LCM (of all 3 elements) can't be less than the already 
+# calculated LCM of the previous 2 numbers.
+# i.e. if we want to find LCM of (9, 18, 3) or (9, 18, 5)
+# LCM of (9, 18, 3) = 18 (greater than or equal to LCM of 2 numbers)
+# LCM of (9, 18, 5) = 90 (greater than or equal to LCM of 2 numbers)
+
 
 from typing import List
 
