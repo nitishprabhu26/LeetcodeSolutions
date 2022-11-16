@@ -5,6 +5,7 @@
 # we use Binary Search for numbers lower than itself. Similarly, if it returns a 1, we use Binary Search for 
 # numbers higher than itself.
 
+
 # The guess API is already defined for you.
 # @param num, your guess
 # @return -1 if my number is lower, 1 if my number is higher, otherwise return 0

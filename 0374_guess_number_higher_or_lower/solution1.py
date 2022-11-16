@@ -1,6 +1,7 @@
 # Approach 1: Brute Force
-# We check every number from 1 to n-1 and pass it to the guess function. The number for which a 0 is returned 
+# We check every number from 1 to n and pass it to the guess function. The number for which a 0 is returned 
 # is the required answer.
+
 
 # The guess API is already defined for you.
 # @param num, your guess
