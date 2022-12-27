@@ -34,6 +34,18 @@ class Solution:
 #         if left < right:
 #             s[left], s[right] = s[right], s[left]
 #             self.helper(s, left+1, right-1)
+
+
+# Does in-place mean constant space complexity?
+# No. By definition, an in-place algorithm is an algorithm which transforms input using no auxiliary data structure.
+# The tricky part is that space is used by many actors, not only by data structures. The classical example is to 
+# use recursive function without any auxiliary data structures.
+# Is it in-place? Yes.
+# Is it constant space? No, because of recursion stack.
+
+# Complexity Analysis:
+# Time complexity : O(N) time to perform N/2 swaps.
+# Space complexity : O(N) to keep the recursion stack.
         
 
 # OR
@@ -56,13 +68,6 @@ obj = Solution()
 print(obj.reverseString(s))
 
 
-# Does in-place mean constant space complexity?
-# No. By definition, an in-place algorithm is an algorithm which transforms input using no auxiliary data structure.
-# The tricky part is that space is used by many actors, not only by data structures. The classical example is to 
-# use recursive function without any auxiliary data structures.
-# Is it in-place? Yes.
-# Is it constant space? No, because of recursion stack.
-
 # Complexity Analysis:
-# Time complexity : O(N) time to perform N/2 swaps.
-# Space complexity : O(N) to keep the recursion stack.
+# Time complexity : O(N) time to go through the array, twice.
+# Space complexity : O(N) to keep the stack.
