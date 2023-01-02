@@ -1,5 +1,7 @@
 # Approach #2 (Binary Search) [Accepted]
 # It is not difficult to see that this could be solved using a classic algorithm - Binary search.
+# OR
+# https://youtu.be/KiZwKNpayZw
 
 # The isBadVersion API is already defined for you.
 # @param version, an integer
@@ -15,11 +17,11 @@ class Solution:
         left = 1
         right = n
         mid = 0
-        while left <= right:
+        while left < right:
             mid = left + (right - left) // 2
             
             if isBadVersion(mid):
-                right = mid - 1
+                right = mid
             else:
                 left = mid + 1
                 
@@ -27,18 +29,18 @@ class Solution:
 
 
 # OR
-# https://youtu.be/KiZwKNpayZw
+# Also
 
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         left = 1
         right = n
         mid = 0
-        while left < right:
+        while left <= right:
             mid = left + (right - left) // 2
             
             if isBadVersion(mid):
-                right = mid
+                right = mid - 1
             else:
                 left = mid + 1
                 
