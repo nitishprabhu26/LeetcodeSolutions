@@ -1,5 +1,6 @@
 # Approach 1: Character by Character
 
+
 class Solution:
     def detectCapitalUse(self, word: str) -> bool:
         n = len(word)
@@ -35,6 +36,7 @@ class Solution:
         # if not matching
         return False
 
+
 # OR
 # shorter version
 
@@ -59,9 +61,11 @@ class Solution:
         # if pass one of the cases
         return True
 
+
 word = "USA"
 obj = Solution()
 print(obj.detectCapitalUse(word))
+
 
 # Complexity Analysis:
 # Time complexity : O(N), where n is the length of the word. We only need to check each char at most constant 

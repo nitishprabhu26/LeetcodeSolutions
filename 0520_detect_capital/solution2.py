@@ -27,6 +27,22 @@ class Solution:
         # OR - min length 1 is given
         # return re.fullmatch(r"[A-Z]*|.[a-z]*", word)
         
+
+# OR
+# https://youtu.be/V4fhgbLsE0k
+
+class Solution:
+    def detectCapitalUse(self, word: str) -> bool:
+        if word.upper() == word:
+            return True
+        elif word.lower() == word:
+            return True
+        elif word[0].isupper() and word[1:].islower():
+            return True
+        else:
+            return False
+
+
 # OR
 
 class Solution:
@@ -39,9 +55,11 @@ class Solution:
         # OR
         # return word.islower() or word.isupper() or word.istitle()
 
+
 word = "USA"
 obj = Solution()
 print(obj.detectCapitalUse(word))
+
 
 # Complexity Analysis:
 # Time complexity : O(N), but depends on implementation.
