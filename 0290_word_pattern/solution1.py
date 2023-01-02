@@ -1,9 +1,9 @@
 # Approach 1: Two Hash Maps
+# https://leetcode.com/problems/word-pattern/solution/
 
 # Algorithm:
-# Have two hash maps, one for mapping characters to words and the other for mapping words to characters. While 
-# scanning each character-word pair:
-
+# Have two hash maps, one for mapping characters to words and the other for mapping words to characters. 
+# While scanning each character-word pair:
 # - If the character is NOT in the character to word mapping, you additionally check whether that word is also 
 #   in the word to character mapping.
 #   -   If that word is already in the word to character mapping, then you can return False immediately since 
@@ -35,10 +35,12 @@ class Solution:
                     return False
         return True
 
+
 pattern = "abba"
 s = "dog cat cat dog"
 obj = Solution()
 print(obj.wordPattern(pattern, s))
+
 
 # Complexity Analysis
 # Time Complexity: O(N) where N represents the number of words in s or the number of characters in pattern.

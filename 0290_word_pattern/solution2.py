@@ -32,6 +32,6 @@ print(obj.wordPattern(pattern, s))
 
 # Complexity Analysis
 # Time Complexity: O(N) where N represents the number of words in s or the number of characters in pattern.
-# Space Complexity :  O(M) where M represents the number of unique words in s. Even though we have two hash 
+# Space Complexity: O(M) where M represents the number of unique words in s. Even though we have two hash 
 # maps, the character to word hash map has space complexity of O(1) since there can at most be 26 keys.
 
