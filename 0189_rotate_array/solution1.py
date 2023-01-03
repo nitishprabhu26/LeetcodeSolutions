@@ -12,10 +12,12 @@ class Solution:
         n = len(nums)
         k %= n
         nums[:k], nums[k:] = nums[-k:] , nums[:n-k]
+        # cant be the below code: since it errors out for the case nums = [1], k = 0
+        # nums[:k], nums[k:] = nums[-k:] , nums[:-k]
 
 
 nums = [1,2,3,4,5,6,7]
-k = 6
+k = 3
 obj = Solution()
 obj.rotate(nums, k)
 print(nums)
