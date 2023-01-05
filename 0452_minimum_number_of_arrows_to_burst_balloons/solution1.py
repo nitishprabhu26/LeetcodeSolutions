@@ -1,8 +1,7 @@
 # Approach 1: Greedy
 # https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/solution/ (followed this)
 # (use picture in example to understand)
-# OR
-# https://youtu.be/hND9YHeZJLA
+
 
 from typing import List
 
@@ -26,14 +25,31 @@ class Solution:
         
         return arrows
 
-points = [[10,16],[2,8],[1,6],[7,12]]
 
+# OR
+# https://youtu.be/hND9YHeZJLA
+
+class Solution:
+    def findMinArrowShots(self, points: List[List[int]]) -> int:
+        points = sorted(points, key = lambda x : x[1])
+        
+        count = 0
+        ending = float('-inf')
+        for balloon in points:
+            if balloon[0] > ending:
+                count += 1
+                ending = balloon[1]
+        
+        return count
+
+
+points = [[10,16],[2,8],[1,6],[7,12]]
 obj = Solution()
 print(obj.findMinArrowShots(points))
 
 
 # Complexity Analysis:
-# Time complexity : O(NlogN) because of sorting of input data.
+# Time complexity : O(N.logN) because of sorting of input data.
 # Space complexity : O(N) or O(logN)
 # The space complexity of the sorting algorithm depends on the implementation of each program language.
 # For instance, the list.sort() function in Python is implemented with the Timsort algorithm whose space 
