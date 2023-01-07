@@ -35,7 +35,32 @@ class Solution:
                 return start_station_index
         return -1
             
+# OR
 
+class Solution:
+    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+        if sum(gas) < sum(cost):
+            return -1
+        
+        n= len(gas)
+        
+        for start_station_index in range(n):
+            total_tank = 0
+            for i in range(n):
+                total_tank += gas[(start_station_index + i) % n] - cost[(start_station_index + i) % n]
+                
+                if total_tank < 0:
+                    break
+            
+            # if we travel full circle, with total_tank >= 0
+            if total_tank >= 0:
+                return start_station_index
+            
+        return -1
+
+
+# Approach : Neetcode.
+# https://youtu.be/lJwbPZGo05A
 # O(n) approach:(Neetcode)
 
 class Solution:
