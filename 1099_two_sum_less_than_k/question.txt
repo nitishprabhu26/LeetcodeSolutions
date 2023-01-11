@@ -16,5 +16,3 @@ Constraints:
 1 <= nums.length <= 100
 1 <= nums[i] <= 1000
 1 <= k <= 2000
-
-// skipping solution4
