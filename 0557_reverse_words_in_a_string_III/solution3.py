@@ -35,4 +35,6 @@ print(obj.reverseWords(s))
 # Let N be the length of input string s.
 # Time complexity : O(N) Every character in the string is traversed twice. First, to find the end of the current 
 # word, and second to reverse the word and append it to the result. Thus the time complexity is, O(N + N) = O(N).
-# Space complexity : O(1) We use constant extra space to track the last space index.
+# Space complexity : O(1) We use constant extra space to track the last space index. You could also argue that we 
+# are using O(n) space to build the output string (we normally don't count the output as part of the space 
+# complexity, but in this case we are temporarily using some space to build it).

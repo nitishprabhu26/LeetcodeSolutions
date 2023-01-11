@@ -52,4 +52,6 @@ print(obj.reverseWords(s))
 # Time complexity : O(N) The outer loop iterates over N characters to find the start and end index of every word. 
 # The algorithm to reverse the word also iterates N times to perform N/2 swaps. Thus, the time complexity is 
 # O(N + N) = O(N).
-# Space complexity : O(1) We use constant extra space to track the last space index.
+# Space complexity : O(1) We use constant extra space to track the last space index. You could also argue that we 
+# are using O(n) space to build the output string (we normally don't count the output as part of the space 
+# complexity, but in this case we are temporarily using some space to build it).
