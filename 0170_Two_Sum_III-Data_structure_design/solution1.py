@@ -53,6 +53,10 @@ print(obj.find(target_2))
 # So to the above questions about where to place the sort operation, actually both options are valid and correct. 
 # Due to the usage pattern of the two functions though, it is less optimal to sort the list at each add operation.
 
+# On the other hand, we do not do sorting at each occasion of find(value) neither. But rather, we sort on demand, 
+# i.e. only when the list is updated. As a result, we amortize the cost of the sorting over the time. And this is 
+# the optimization trick for the solution to pass the online judge.
+
 
 # Complexity analysis:
 # Time Complexity: 
