@@ -22,6 +22,17 @@ class Solution:
 
 # OR
 
+class Solution(object):
+    def middleNode(self, head):
+        arr = []
+        while head:
+            arr.append(head)
+            head = head.next
+        return arr[len(arr)//2]
+
+
+# OR
+
 class Solution:
     def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
         arr = [head]
