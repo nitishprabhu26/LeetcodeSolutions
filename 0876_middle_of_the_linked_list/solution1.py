@@ -17,6 +17,19 @@ class Solution:
         return mid_node
 
 
+# OR
+
+class Solution(object):
+    def middleNode(self, head):
+        mid_node = head
+        last_node = 1
+        while head:
+            head = head.next
+            if last_node % 2 == 0:
+                mid_node = mid_node.next
+            last_node += 1
+        return mid_node
+
 head = [1, 2, 3, 4, 5]
 obj = Solution()
 print(obj.middleNode(head))
