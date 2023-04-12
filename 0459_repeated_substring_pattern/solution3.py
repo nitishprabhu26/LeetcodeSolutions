@@ -1,10 +1,14 @@
+# Regular expression starter:
+# https://www.geeksforgeeks.org/regular-expression-python-examples-set-1/
+# https://www.geeksforgeeks.org/regular-expressions-python-set-1-search-match-find/
+# https://www.geeksforgeeks.org/python-re-search-vs-re-match/
+
+
 # Approach 1: Regex:
 # https://leetcode.com/problems/repeated-substring-pattern/solution/
 # OR
 # https://youtu.be/KOUtRfgslGM?t=518
 
-
-# https://www.geeksforgeeks.org/python-re-search-vs-re-match/#:~:text=match()%20both%20are%20functions,the%20use%20of%20both%20functions.
 
 import re
 

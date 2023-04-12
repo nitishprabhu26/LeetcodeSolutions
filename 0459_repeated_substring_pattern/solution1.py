@@ -33,7 +33,7 @@ class Solution:
         
         for i in range(length_s // 2):
             substring = s[:i + 1]
-            if length_s % len(substring) ==0:
+            if length_s % len(substring) == 0:
                 no_of_rep = length_s // len(substring)
                 new_str = ''
                 while no_of_rep > 0:

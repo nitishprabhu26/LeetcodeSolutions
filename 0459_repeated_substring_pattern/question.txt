@@ -1,3 +1,4 @@
+[Pending approach 3 and 4]
 Given a string s, check if it can be constructed by taking a substring of it and appending multiple copies of the 
 substring together. 
 

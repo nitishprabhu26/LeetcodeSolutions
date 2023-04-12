@@ -57,12 +57,16 @@ Building a heap:
 https://www.geeksforgeeks.org/time-complexity-of-building-a-heap/
 Understanding heap: 347
 
-Regex:
-459. Repeated Substring Pattern (Pending basics)
-
-
 The Four Basic Properties of Logs
 1. log_b(x.y) = log_b(x) + log_b(y).
 2. log_b(x/y) = log_b(x) - log_b(y).
 3. log_b(x^n) = n.log_b(x).          
 4. log_b(x)   = log_a(x) / log_a(b).
+
+# Regular expression starter:
+# https://www.geeksforgeeks.org/regular-expression-python-examples-set-1/
+# https://www.geeksforgeeks.org/regular-expressions-python-set-1-search-match-find/
+# https://www.geeksforgeeks.org/python-re-search-vs-re-match/
+
+Regex:
+459. Repeated Substring Pattern (Pending basics)
