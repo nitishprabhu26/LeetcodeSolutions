@@ -70,3 +70,6 @@ The Four Basic Properties of Logs
 
 Regex:
 459. Repeated Substring Pattern (Pending basics)
+
+<!-- Python methods: -->
+https://www.geeksforgeeks.org/python-map-function/

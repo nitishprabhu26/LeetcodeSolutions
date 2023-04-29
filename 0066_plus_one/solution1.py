@@ -17,7 +17,9 @@ class Solution:
 class Solution:
     def plusOne(self, digits: List[int]) -> List[int]:
         # using map
+        # https://www.geeksforgeeks.org/python-map-function/
         num_str = ''.join(map(str, digits))
+        # num_str = ''.join(map(lambda x: str(x), digits))
 
         num_int = int(num_str) + 1
 
