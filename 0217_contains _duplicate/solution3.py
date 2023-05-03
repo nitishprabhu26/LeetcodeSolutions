@@ -2,8 +2,8 @@
 # Intuition:
 # If there are any duplicate integers, they will be consecutive after sorting.
 
-from typing import List
 
+from typing import List
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
@@ -13,11 +13,13 @@ class Solution:
                 return True
         return False
 
+
 # nums = [1,2,3,1]
 nums = [1,2,3,4]
 # nums = [1,1,1,3,3,4,3,2,4,2]
 obj = Solution()
 print(obj.containsDuplicate(nums))
+
 
 # Complexity analysis:
 # Time complexity : O(n. logn). For sort function
