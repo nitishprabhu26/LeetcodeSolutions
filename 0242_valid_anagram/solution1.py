@@ -1,4 +1,5 @@
-# Approach 1
+# Approach 1: Sorting
+
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
@@ -6,6 +7,7 @@ class Solution:
             return False
 
         return sorted(s) == sorted(t)
+
 
 # converting to list
 class Solution:
@@ -24,6 +26,7 @@ s = "anagram"
 t = "nagaram"
 obj = Solution()
 print(obj.isAnagram(s, t))
+
 
 # Complexity analysis:
 # Time complexity : O(n logn). used sorted method

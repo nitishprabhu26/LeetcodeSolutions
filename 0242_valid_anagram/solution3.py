@@ -1,4 +1,5 @@
-# Approach 3 (using llist counter)
+# Approach 2: Frequency List Counter
+
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
@@ -8,7 +9,6 @@ class Solution:
         counter_array = [0]*26
 
         for i in range(len(s)):
-
             counter_array[ord(s[i]) - ord('a')] += 1
             counter_array[ord(t[i]) - ord('a')] -= 1
 
@@ -17,6 +17,7 @@ class Solution:
                 return False
         return True
 
+# OR
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
@@ -41,6 +42,7 @@ t = "nagaram"
 obj = Solution()
 print(obj.isAnagram(s, t))
 
+
 # Complexity analysis:
 # Time complexity : O(n). for loop
-# Space complexity :  we have 26 charecters in alphabets, it could be considered as O(1) for the list
+# Space complexity :  we have 26 charecters in alphabets, it could be considered as O(1) for the list.
