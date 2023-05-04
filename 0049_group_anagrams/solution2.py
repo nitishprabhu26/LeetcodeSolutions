@@ -30,7 +30,6 @@ class Solution:
         return ans.values()
 
 
-
 strs = ["eat","tea","tan","ate","nat","bat"]
 obj = Solution()
 print(obj.groupAnagrams(strs))

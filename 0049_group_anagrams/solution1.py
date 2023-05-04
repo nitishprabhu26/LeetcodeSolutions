@@ -39,14 +39,14 @@ class Solution:
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        dict={}
+        dict = {}
         for i in strs:
-            k=''.join(sorted(i))
+            k =''.join(sorted(i))
 
             if k in dict:
-                dict[k]+=[i]
+                dict[k] += [i]
             else:
-                dict[k]=[i]
+                dict[k] = [i]
 
         return dict.values()
 
