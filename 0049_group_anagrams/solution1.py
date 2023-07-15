@@ -15,7 +15,6 @@
 import collections
 from typing import List
 
-
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         ans = collections.defaultdict(list)
@@ -26,17 +25,22 @@ class Solution:
 
 # OR
 # storing key as string in Python
-
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         ans = collections.defaultdict(list)
         for s in strs:
             ans[''.join(sorted(s))].append(s)
         return ans.values()
+# OR
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        ans = collections.defaultdict(list)
+        for s in strs:
+            ans[''.join(sorted(s))] += [s]
+        return ans.values()
 
 
 # OR Using regular dictionary
-
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
         dict = {}
@@ -49,7 +53,20 @@ class Solution:
                 dict[k] = [i]
 
         return dict.values()
+# OR
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        dict = {}
+        for i in strs:
+            k =''.join(sorted(i))
 
+            if k in dict:
+                dict[k].append(i)
+            else:
+                dict[k] = [i]
+
+        return dict.values()
+    
 
 strs = ["eat","tea","tan","ate","nat","bat"]
 obj = Solution()

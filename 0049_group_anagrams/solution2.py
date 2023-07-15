@@ -36,6 +36,6 @@ print(obj.groupAnagrams(strs))
 
 
 # Complexity Analysis:
-# Time complexity : O(N.K) i.e. O(26.N.K), where N is the length of strs, and K is the maximum length of a string 
-# in strs. Counting each string is linear in the size of the string, and we count every string.
+# Time complexity : O(N.K) i.e. O(26.N.K), where N is the length of strs, and K is the maximum length of a 
+# string in strs. Counting each string is linear in the size of the string, and we count every string.
 # Space complexity : O(N.K), the total information content stored in ans. 
