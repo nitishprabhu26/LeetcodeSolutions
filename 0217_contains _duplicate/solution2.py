@@ -21,6 +21,12 @@ class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
         return True if len(set(nums)) < len(nums) else False
 
+# OR
+# 1-liner
+class Solution:
+    def containsDuplicate(self, nums: List[int]) -> bool:
+        return len(set(nums)) != len(nums)
+
 
 nums = [1,2,3,1]
 # nums = [1,2,3,4]
