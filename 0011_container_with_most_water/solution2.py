@@ -1,4 +1,7 @@
 # Approach 2: Two Pointer Approach
+# OR
+# Neetcode: https://youtu.be/UuiTKBwPgAo
+
 # Algorithm:
 # We take two pointers, one at the beginning and one at the end of the array constituting the length of the 
 # lines. Futher, we maintain a variable maxarea to store the maximum area obtained till now. At every step, 
