@@ -1,4 +1,6 @@
 # Approach 1: Compare with Reverse
+# https://www.geeksforgeeks.org/filter-in-python/
+
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
@@ -9,6 +11,7 @@ class Solution:
         reversed_chars_list = filtered_chars_list[::-1]
 
         return filtered_chars_list == reversed_chars_list
+
             
 inp = "A man, a plan, a canal: Panama"
 obj = Solution()
@@ -16,7 +19,7 @@ print(obj.isPalindrome(inp))
 
 
 # Complexity Analysis:
-# Time complexity : O(n), in length nn of the string.
+# Time complexity : O(n), in length n of the string.
 # We need to iterate thrice through the string:
 # 1. When we filter out non-alphanumeric characters, and convert the remaining characters to lower-case.
 # 2. When we reverse the string.

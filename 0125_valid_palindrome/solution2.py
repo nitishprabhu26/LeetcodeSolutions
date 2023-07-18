@@ -20,7 +20,7 @@ class Solution:
 
 
 # OR
-
+# https://www.scaler.com/topics/difference-between-break-and-continue-in-python/
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
