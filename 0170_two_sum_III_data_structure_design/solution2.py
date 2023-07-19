@@ -6,7 +6,6 @@ class TwoSum(object):
     def __init__(self):
         self.num_counts = {}
 
-
     def add(self, number):
         if number in self.num_counts:
             self.num_counts[number] += 1
