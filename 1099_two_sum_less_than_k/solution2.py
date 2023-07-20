@@ -2,7 +2,7 @@
 
 # Algorithm:
 # 1. Sort the array.
-# 2. Set the left pointer to zero, and right - to the last index.
+# 2. Set the left pointer to zero, and right to the last index.
 # 3. While left is smaller than right:
 #       If nums[left] + nums[right] is less than k:
 #           Track maximum nums[left] + nums[right] in the result answer.
@@ -32,8 +32,8 @@ class Solution:
 
 # Optimizations:
 # We can break from the loop as soon as nums[left] > k / 2. In the sorted array, nums[left] is the smallest of 
-# the remaining elements, so nums[right] > k / 2 for any right. Therefore, nums[left] + nums[right] will be equal 
-# or greater than k for the remaining elements.
+# the remaining elements, so nums[right] > k / 2 for any right. Therefore, nums[left] + nums[right] will be 
+# equal or greater than k for the remaining elements.
 
 class Solution:
     def twoSumLessThanK(self, nums: List[int], k: int) -> int:

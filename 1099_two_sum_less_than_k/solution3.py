@@ -1,12 +1,12 @@
 # Approach 3: Binary Search
 
-# Instead of moving two pointers towards the target, we can iterate through each element nums[i], and binary-search
-# for a complement value k - nums[i]. This approach is less efficient than the two pointers one, however, it can 
-# be more intuitive to come up with.
+# Instead of moving two pointers towards the target, we can iterate through each element nums[i], and binary 
+# search for a complement value k - nums[i]. This approach is less efficient than the two pointers one, however,
+# it can be more intuitive to come up with.
 # Note that the binary search returns the "insertion point" for the searched value, i.e. the position where that 
-# value would be inserted to keep the array sorted. So, the binary search result points to the first element that 
-# is equal or greater than the complement value. Since our sum must be smaller than k, we consider the element 
-# immediately before the found element.
+# value would be inserted to keep the array sorted. So, the binary search result points to the first element 
+# that is equal or greater than the complement value. Since our sum must be smaller than k, we consider the 
+# element immediately before the found element.
 
 # Algorithm:
 # 1. Sort the array.

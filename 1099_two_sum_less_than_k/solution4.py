@@ -48,8 +48,8 @@ print(obj.twoSumLessThanK(nums, k))
 # 1. We can set hi to either maximum number, or k - 1, whichever is smaller.
 # 2. We can ignore numbers greater than k - 1.
 # 3. We can use a boolean array (e.g. seen) instead of count. In the first loop, we will check if i is a 
-#    duplicate (seen[i] is already true) and set answer to the highest i + i < k. Note that the two pointers loop 
-#    will run while lo < hi, not while lo <= hi.
+#    duplicate (seen[i] is already true) and set answer to the highest i + i < k. Note that the two pointers 
+#    loop will run while lo < hi, not while lo <= hi.
 # 4. We can break from the two pointers loop as soon as nums[lo] > k / 2.
 
 
