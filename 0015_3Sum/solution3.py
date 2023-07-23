@@ -2,11 +2,11 @@
 # https://leetcode.com/problems/3sum/solution/
 
 # We move our pivot element nums[i] and analyze elements to its right. We find all pairs whose sum is equal to
-# -nums[i] using the Two Sum: One-pass Hash Table approach, so that the sum of the pivot element (nums[i]) and the 
-# pair (-nums[i]) is equal to zero.
+# -nums[i] using the Two Sum: One-pass Hash Table approach, so that the sum of the pivot element (nums[i]) and 
+# the pair (-nums[i]) is equal to zero.
 # To do that, we process each element nums[j] to the right of the pivot, and check whether a complement 
-# -nums[i] - nums[j] is already in the hashset. If it is, we found a triplet. Then, we add nums[j] to the hashset, 
-# so it can be used as a complement from that point on.
+# -nums[i] - nums[j] is already in the hashset. If it is, we found a triplet. Then, we add nums[j] to the 
+# hashset, so it can be used as a complement from that point on.
 
 
 # Algorithm:
