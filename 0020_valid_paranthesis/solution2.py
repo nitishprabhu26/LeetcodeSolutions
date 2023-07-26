@@ -10,32 +10,47 @@ class Solution:
             if i in open_par:
                 stack.append(i)
             elif stack and i == bracket_map[stack[-1]]:
-                    stack.pop()
+                stack.pop()
             else:
                 return False
         return stack == []
-
 
 # OR
 
 class Solution:
     def isValid(self, s: str) -> bool:
-        stack=[]
+        bracket_map = {")": "(", "]": "[",  "}": "{"}
+        open_par = set(["(", "[", "{"])
+        stack = []
+        for i in s:
+            if i in open_par:
+                stack.append(i)
+            elif stack and bracket_map[i] == stack[-1]:
+                stack.pop()
+            else:
+                return False
+        return stack == []
+
+# OR
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
         for i in s:
             if i in "({[":
                 stack.append(i)
             elif stack:
-                    if i==")" and stack[-1]=="(":
-                        stack.pop()
-                    elif i=="}" and stack[-1]=="{":
-                        stack.pop()
-                    elif i=="]" and stack[-1]=="[":
-                        stack.pop()
-                    else:
-                        return False
+                if i == ")" and stack[-1] == "(":
+                    stack.pop()
+                elif i == "}" and stack[-1] == "{":
+                    stack.pop()
+                elif i == "]" and stack[-1] == "[":
+                    stack.pop()
+                else:
+                    return False
             else:
                 return False
-        return stack==[]
+        return stack == []
 
 
 s = "()"

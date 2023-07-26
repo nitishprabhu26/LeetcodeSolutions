@@ -1,7 +1,7 @@
 # Approach 1: Stacks
 # https://leetcode.com/problems/valid-parentheses/solution/
 # OR
-# https://youtu.be/WTzjTskDFMg (Similar)
+# Neetcode: https://youtu.be/WTzjTskDFMg (Similar)
 
 
 # Algorithm:
@@ -44,6 +44,25 @@ class Solution:
         # In the end, if the stack is empty, then we have a valid expression.
         # The stack won't be empty for cases like ((()
         return not stack
+    
+# OR
+# Neetcode: https://youtu.be/WTzjTskDFMg (Similar)
+
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stack = []
+        closeToOpen = { ")": "(", "}": "{", "]": "[" }
+
+        for c in s:
+            if c in closeToOpen:
+                if stack and stack[-1] == closeToOpen[c]:
+                    stack.pop()
+                else:
+                    return False
+            else:
+                stack.append(c)
+        
+        return True if not stack else False
 
 
 s = "()"
