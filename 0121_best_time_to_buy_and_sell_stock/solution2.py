@@ -1,9 +1,10 @@
 # Approach 2: One Pass
 # https://leetcode.com/problems/best-time-to-buy-and-sell-stock/solution/
 
-# The points of interest are the peaks and valleys in the given graph. We need to find the largest peak following 
-# the smallest valley. We can maintain two variables - minprice and maxprofit corresponding to the smallest valley 
-# and maximum profit (maximum difference between selling price and minprice) obtained so far respectively.
+# The points of interest are the peaks and valleys in the given graph. We need to find the largest peak 
+# following the smallest valley. We can maintain two variables - minprice and maxprofit corresponding to the 
+# smallest valley and maximum profit (maximum difference between selling price and minprice) obtained so far 
+# respectively.
 
 
 from typing import List
