@@ -4,6 +4,7 @@ Note:
 17 : Backtracking, BFS, DFS
 
 226: Simple recursion, 2 ways
+206: recursive linkedlist
 867 : Transpose of a matrix
 98, 102, 104, 235, 105, 106, 108, 109, 230: tree
 

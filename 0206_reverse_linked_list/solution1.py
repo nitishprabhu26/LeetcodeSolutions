@@ -3,10 +3,10 @@
 # Neetcode: https://youtu.be/G0_I-ZF0S38
 
 # Intuition:
-# While traversing the list, we can change the current node's next pointer to point to its previous element. Since 
-# a node does not have reference to its previous node, we must store its previous element beforehand. We also need 
-# another pointer to store the next node before changing the reference. Do not forget to return the new head 
-# reference at the end!
+# While traversing the list, we can change the current node's next pointer to point to its previous element. 
+# Since a node does not have reference to its previous node, we must store its previous element beforehand. We 
+# also need another pointer to store the next node before changing the reference. Do not forget to return the 
+# new head reference at the end!
 
 
 # Definition for singly-linked list.
