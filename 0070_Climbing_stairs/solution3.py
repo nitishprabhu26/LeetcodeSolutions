@@ -1,7 +1,8 @@
 # Approach 3: Dynamic Programming
+# https://leetcode.com/problems/climbing-stairs/editorial/
 
 # Algorithm:
-# optimal solution can be constructed efficiently from optimal solutions of its subproblems, we can use dynamic 
+# Optimal solution can be constructed efficiently from optimal solutions of its subproblems, we can use dynamic 
 # programming to solve this problem.
 
 # One can reach i th step in one of the two ways:
