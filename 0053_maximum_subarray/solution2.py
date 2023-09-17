@@ -34,7 +34,7 @@ print(obj.maxSubArray(nums))
 
 
 # Complexity Analysis:
-# Time complexity: O(N^1), where N is the length of nums.
+# Time complexity: O(N^2), where N is the length of nums.
 # We use 2 nested for loops, with each loop iterating through nums.
 # Space complexity: O(1)
 # No matter how big the input is, we are only ever using 2 variables: ans and currentSubarray.
