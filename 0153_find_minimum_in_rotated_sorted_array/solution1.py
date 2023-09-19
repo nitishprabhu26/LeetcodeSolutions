@@ -12,14 +12,14 @@
 # 1. Find the mid element of the array.
 # 2. If mid element > first element of array this means that we need to look for the inflection point on the 
 #    right of mid.
-# 3. If mid element < first element of array this that we need to look for the inflection point on the left of mid.
+# 3. If mid element < first element of array this that we need to look for the inflection point on the left of 
+#    mid.
 # 4. We stop our search when we find the inflection point, when either of the two conditions is satisfied:
-#       nums[mid] > nums[mid + 1] Hence, mid+1 is the smallest.
+#       nums[mid] > nums[mid + 1] Hence, mid + 1 is the smallest.
 #       nums[mid - 1] > nums[mid] Hence, mid is the smallest.
 
 
 from typing import List
-
 
 class Solution:
     def findMin(self, nums: List[int]) -> int:
@@ -57,13 +57,16 @@ class Solution:
             # if nums[mid] > nums[left]:
             if nums[mid] > nums[0]:
                 left = mid + 1
-            # if nums[0] is greater than the mid value then this means the smallest value is somewhere to the left
+            # if nums[0] is greater than the mid value then this means the smallest value is somewhere to the 
+            # left
             else:
                 right = mid - 1
+
 
 nums = [3,4,5,1,2]
 obj = Solution()
 print(obj.findMin(nums))
+
 
 # Complexity Analysis:
 # Time Complexity : Same as Binary Search O(logN)
