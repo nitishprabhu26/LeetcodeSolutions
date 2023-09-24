@@ -8,7 +8,6 @@
 # look for target.
 # 3. Perform a binary search in the chosen part of the array.
 
-from typing import List
 
 class Solution:
     def search(self, nums, target):
@@ -73,4 +72,3 @@ print(obj.search(nums, target))
 # Complexity Analysis:
 # Time complexity : O(log N). 
 # Space complexity : O(1).
-
