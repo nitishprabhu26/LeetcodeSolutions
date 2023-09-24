@@ -27,6 +27,13 @@ class Solution:
                         right = pivot - 1
                     else:
                         left = pivot + 1
+                # below code doesnt work if replaced with above 5 lines,
+                # should be 'if nums[pivot] >= nums[left]:'
+                # else:
+                #     if nums[pivot] > nums[left]:
+                #         left = pivot + 1
+                #     else:
+                #         right = pivot - 1
 
         def search(left, right):
             """
