@@ -65,6 +65,8 @@ class Solution:
             return -1
         
         # Binary search over elements on the pivot element's left
+        # Walrus operator: https://youtu.be/PceVGWP0YJM?si=rQzwtROTiJcEELgY
+        # calculation and assigment together
         if (answer := binarySearch(0, left - 1, target)) != -1:
             return answer 
         

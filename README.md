@@ -74,3 +74,5 @@ Regex:
 
 <!-- Python methods: -->
 https://www.geeksforgeeks.org/python-map-function/
+
+# Walrus operator: https://youtu.be/PceVGWP0YJM?si=rQzwtROTiJcEELgY
