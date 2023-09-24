@@ -23,7 +23,7 @@ class TwoSum:
             self.nums.sort()
             self.is_sorted = True
             
-        low, high = 0, len(self.nums)-1
+        low, high = 0, len(self.nums) - 1
         while low < high:
             currSum = self.nums[low] + self.nums[high]
             if currSum < value:
