@@ -4,9 +4,9 @@
 # https://youtu.be/WnPLSRLSANE
 
 # Algorithm:
-# Because we know that nums contains n numbers and that it is missing exactly one number on the range [0..n-1], we 
-# know that n definitely replaces the missing number in nums. Therefore, if we initialize an integer to n and XOR 
-# it with every index and value, we will be left with the missing number.
+# Because we know that nums contains n numbers and that it is missing exactly one number on the range [0..n-1], 
+# we know that n definitely replaces the missing number in nums. Therefore, if we initialize an integer to n 
+# and XOR it with every index and value, we will be left with the missing number.
 # eg: nums = [0, 1, 3, 4]
 # missing   = 4 ∧ (0∧0) ∧ (1∧1) ∧ (2∧3) ∧ (3∧4)
 #           = (4∧4) ∧ (0∧0) ∧ (1∧1) ∧ (3∧3) ∧ 2
