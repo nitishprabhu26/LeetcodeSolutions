@@ -19,7 +19,7 @@ class Solution:
 #             n >>= 1
 #         return count
 
-n = 11
+n = 0b1111
 obj = Solution()
 print(obj.hammingWeight(n))
 

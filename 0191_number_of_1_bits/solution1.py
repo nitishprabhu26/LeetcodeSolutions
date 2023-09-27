@@ -2,7 +2,8 @@ class Solution:
     def hammingWeight(self, n: int) -> int:
         return bin(n).count("1")
             
-n = 11
+            
+n = 0b11111111111111111111111111111101
 obj = Solution()
 print(obj.hammingWeight(n))
 

@@ -10,7 +10,7 @@ class Solution:
         return distance
             
             
-n = 11
+n = 0b11
 obj = Solution()
 print(obj.hammingWeight(n))
 

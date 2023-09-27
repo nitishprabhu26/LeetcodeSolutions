@@ -11,7 +11,7 @@ class Solution:
         return bits
             
             
-n = 11
+n = 0b11
 obj = Solution()
 print(obj.hammingWeight(n))
 
