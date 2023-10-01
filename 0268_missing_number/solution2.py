@@ -25,7 +25,17 @@ class Solution:
             if nums[i] != expected_num:
                 return expected_num
 
+# OR
 
+class Solution:
+    def missingNumber(self, nums: List[int]) -> int:
+        nums.sort()
+        for i in range(len(nums)):
+            if nums[i] != i:
+                return i
+        return len(nums)
+        
+        
 nums = [9,6,4,2,3,5,7,0,1]
 obj = Solution()
 print(obj.missingNumber(nums))
