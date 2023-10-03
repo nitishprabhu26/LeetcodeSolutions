@@ -1,8 +1,9 @@
 # Approach 2: Bit Manipulation: Short Language-Specific Solution
-# https://leetcode.com/problems/sum-of-two-integers/solution/
+# https://leetcode.com/problems/sum-of-two-integers/editorial/
 # OR
 # Neetcode in JAVA - https://youtu.be/gVUrDV4tZfY
 
+# https://leetcode.com/problems/sum-of-two-integers/editorial/
 # Java solution: Java integer is a number of 32 bits. 31 bits are used for the value. The first bit is used for 
 # the sign: if it's equal to 1, the number is negative, if it's equal to 0, the number is positive.
 
@@ -21,13 +22,12 @@
 #             a = answer;
 #             b = carry;
 #         }
-        
 #         return a;
 #     }
 # }
 
 
-# Python Solution: [PENDING]
+# Python Solution:
 # Python has no 32-bits limit, and hence its representation of negative integers is entirely different.
 # There is no Java magic by default, and if you need a magic - just do it:
 # - After each operation we have an invisible & mask, where mask = 0xFFFFFFFF, i.e. bitmask of 32 1-bits.
