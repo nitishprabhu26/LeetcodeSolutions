@@ -7,10 +7,10 @@
 
 # Approach 1: Stack of Value/ Minimum Pairs:
 
-# Recall that with a Stack, we only ever add (push) and remove (pop) numbers from the top. Therefore, an important 
-# invariant of a Stack is that when a new number, which we'll call x, is placed on a Stack, the numbers below it 
-# will not change for as long as number x remains on the Stack. Numbers could come and go above x for the duration 
-# of x's presence, but never below.
+# Recall that with a Stack, we only ever add (push) and remove (pop) numbers from the top. Therefore, an 
+# important invariant of a Stack is that when a new number, which we'll call x, is placed on a Stack, the 
+# numbers below it will not change for as long as number x remains on the Stack. Numbers could come and go 
+# above x for the duration of x's presence, but never below.
 
 # So, whenever number x is the top of the Stack, the minimum will always be the same, as it's simply the minimum 
 # out of x and all the numbers below it.
@@ -19,8 +19,6 @@
 # corresponding minimum value alongside it. Then whenever that particular number is at the top of the underlying 
 # Stack, the getTop(...) operation of MinStack is as simple as retrieving its corresponding minimum value.
 
-
-from typing import List
 
 class MinStack:
 

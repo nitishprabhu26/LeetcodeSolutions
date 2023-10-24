@@ -1,14 +1,13 @@
 # Approach 3: Improved Two Stacks
 
-# In the above approach, we pushed a new number onto the min-tracker Stack if, and only if, it was less than or 
-# equal to the current minimum.
+# In the previous approach, we pushed a new number onto the min-tracker Stack if, and only if, it was less than 
+# or equal to the current minimum.
 # One downside of this solution is that if the same number is pushed repeatedly onto MinStack, and that number 
 # also happens to be the current minimum, there'll be a lot of needless repetition on the min-tracker Stack.
 
 # An improvement is to put pairs onto the min-tracker Stack. The first value of the pair would be the same as 
 # before, and the second value would be how many times that minimum was repeated.
 
-from typing import List
 
 class MinStack:
     def __init__(self):
@@ -50,7 +49,6 @@ class MinStack:
 
     def getMin(self) -> int:
         return self.min_stack[-1][0]
-
 
 
 # Your MinStack object will be instantiated and called as such:

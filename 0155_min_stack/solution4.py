@@ -24,7 +24,6 @@ class MinStack:
         return self.minStack[-1]
 
 
-
 # Your MinStack object will be instantiated and called as such:
 obj = MinStack()
 obj.push(7)
