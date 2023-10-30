@@ -55,7 +55,7 @@ class Solution:
 
 class Solution:
     def removeElements(self, head: Optional[ListNode], val: int) -> Optional[ListNode]:
-        # Case: where head node(or first few nodes is/are equal to cal; and are to be removed)
+        # Case: where head node(or first few nodes is/are equal to val; and are to be removed)
         # so we skip to the point where head node doesnt equal to val, and then set it as head node
         while head and head.val == val:
             head = head.next
