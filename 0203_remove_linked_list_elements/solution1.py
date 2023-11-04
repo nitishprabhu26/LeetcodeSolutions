@@ -44,6 +44,8 @@ class Solution:
                 prev.next = curr.next
             else:
                 prev = curr
+                # OR
+                # prev = prev.next
             curr = curr.next
         
         return sentinel.next
