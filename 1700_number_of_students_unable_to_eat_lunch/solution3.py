@@ -53,4 +53,4 @@ print(obj.countStudents(students, sandwiches))
 # Complexity Analysis:
 # Let N be the length of students and sandwiches.
 # Time Complexity: O(N).
-# Space complexity : O(2).
+# Space complexity : O(N).
