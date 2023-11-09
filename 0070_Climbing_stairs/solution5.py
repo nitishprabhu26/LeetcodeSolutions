@@ -12,6 +12,21 @@ class Solution:
         return one
 
 
+# OR (refer the diagram in video)
+
+class Solution:
+    def climbStairs(self, n: int) -> int:
+        if n == 1:
+            return 1
+        
+        one, two = 2, 1
+
+        for i in range(n - 2):
+            one, two = one + two, one
+
+        return one
+
+
 n = 38
 obj = Solution()
 print(obj.climbStairs(n))
