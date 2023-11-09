@@ -16,7 +16,7 @@ class Solution:
         first = 1
         second = 2
 
-        for i in range(3, n+1):
+        for i in range(3, n + 1):
             sum = first + second
             first = second
             second = sum

@@ -4,7 +4,7 @@
 
 # We take all possible step combinations i.e. 1 and 2, at every step. At every step we are calling the function 
 # climbStairs for step 1 and 2, and return the sum of returned values of both functions.
-# climbStairs(i,n) = climbStairs(i + 1, n) + climbStairs(i + 2, n)
+# climbStairs(i, n) = climbStairs(i + 1, n) + climbStairs(i + 2, n)
 # where i defines the current step and n defines the destination step.       
 
 
@@ -19,7 +19,7 @@ class Solution:
         if i == n:
             return 1
         
-        return self.climb_stairs(i+1, n)+ self.climb_stairs(i+2, n)
+        return self.climb_stairs(i + 1, n) + self.climb_stairs(i + 2, n)
 
 
 n = 5
