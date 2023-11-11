@@ -52,5 +52,5 @@ print(obj.search(nums, target))
 
 
 # Complexity Analysis:
-# Time complexity: O(logN).
+# Time complexity: O(log N).
 # Space complexity : O(1).

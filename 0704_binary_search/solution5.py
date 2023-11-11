@@ -46,5 +46,5 @@ print(obj.search(nums, target))
 
 # Complexity Analysis:
 # Let N be the size of the input array nums.
-# Time complexity: O(logN). The time complexity of the built-in binary search is O(logN).
+# Time complexity: O(log N). The time complexity of the built-in binary search is O(log N).
 # Space complexity : O(1). The built-in binary search only takes O(1) space.
