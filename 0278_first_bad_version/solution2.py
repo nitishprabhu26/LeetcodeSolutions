@@ -53,5 +53,5 @@ print(obj.firstBadVersion(n))
 
 
 # Complexity analysis:
-# Time complexity : O(logn). The search space is halved each time, so the time complexity is O(logn).
+# Time complexity : O(log n). The search space is halved each time, so the time complexity is O(log n).
 # Space complexity : O(1).
