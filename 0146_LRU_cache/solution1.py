@@ -2,7 +2,19 @@
 # https://docs.python.org/3/library/collections.html#collections.OrderedDict
 # https://www.geeksforgeeks.org/ordereddict-in-python/
 
+
+# Intuition:
+# We're asked to implement the structure which provides the following operations in O(1) time :
+# - Get the key / Check if the key exists
+# - Put the key
+# - Delete the first added key
+# The first two operations in O(1) time are provided by the standard hashmap and the last one - by a linked list.
+# There is a structure called ordered dictionary, it combines both hashmap and linked list. In Python, this 
+# structure is called OrderedDict and in Java LinkedHashMap.
+
+
 from collections import OrderedDict
+
 class LRUCache(OrderedDict):
 
     def __init__(self, capacity: int):
@@ -19,10 +31,12 @@ class LRUCache(OrderedDict):
             self.move_to_end(key)
         self[key] = value
             
-        if len(self)>self.capacity:
-            self.popitem(last=False)
+        if len(self) > self.capacity:
+            self.popitem(last = False)
             
-# The popitem() method for ordered dictionaries returns and removes a (key, value) pair. The pairs are returned in LIFO order if last is true or FIFO order if false.
+
+# The popitem() method for ordered dictionaries returns and removes a (key, value) pair. The pairs are returned 
+# in LIFO order if last is true or FIFO order if false.
 
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
@@ -48,5 +62,7 @@ class LRUCache(OrderedDict):
 # lRUCache.get(4);    // return 4
 
 # Complexity Analysis:
-# Time complexity : O(1) both for put and get since all operations with ordered dictionary : get/in/set/move_to_end/popitem (get/containsKey/put/remove) are done in a constant time.
-# Space complexity : O(capacity) since the space is used only for an ordered dictionary with at most capacity+1 elements.
+# Time complexity : O(1) both for put and get since all operations with ordered dictionary : 
+# get/in/set/move_to_end/popitem (get/containsKey/put/remove) are done in a constant time.
+# Space complexity : O(capacity) since the space is used only for an ordered dictionary with at most 
+# capacity + 1 elements.
