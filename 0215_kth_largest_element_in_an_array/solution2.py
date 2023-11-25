@@ -41,6 +41,18 @@ class Solution:
     def findKthLargest(self, nums: List[int], k: int) -> int:
         return heapq.nlargest(k, nums)[-1]
 
+# OR
+
+class Solution:
+    def findKthLargest(self, nums: List[int], k: int) -> int:
+        heap = []
+        for num in nums:
+            heapq.heappush(heap, num)
+            if len(heap) > k:
+                heapq.heappop(heap)
+        
+        return heap[0]
+        
 
 nums = [3,2,3,1,2,4,5,5,6]
 k = 4
@@ -50,4 +62,6 @@ print(obj.findKthLargest(nums, k))
 
 # Complexity Analysis:
 # Time complexity : O(N.logk).
+# Operations on a heap cost logarithmic time relative to its size. Because our heap is limited to a size of k, 
+# operations cost at most O(logk). We iterate over nums, performing one or two heap operations at each iteration.
 # Space complexity : O(k) to store the heap elements.
