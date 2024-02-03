@@ -37,5 +37,5 @@ print(obj.addTwoNumbers(l1, l2))
 
 # Complexity Analysis:
 # Time complexity : O(max(m,n)+1). Assume that m and n represents the length of l1 and l2 respectively,
-# the algorithm above iterates at most max(m,n) times.
-# Space complexity : O(max(m,n)). The length of the new list is at most max(m,n)+1
+# the algorithm above iterates at most max(m,n)+1 times.
+# Space complexity : O(max(m,n)). The length of the new list is at most max(m,n)+1.
