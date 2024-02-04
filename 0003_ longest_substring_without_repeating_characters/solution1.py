@@ -18,24 +18,34 @@ class Solution:
         return max
 
 # OR
-
+# break the inner loop when a substring is not unique [Accepted]
+    
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        def checkAllUnique(start, end):
-            chars = [0]*128
-            for i in range(start, end + 1):
-                c = s[i]
-                chars[ord(c)] += 1
-                if chars[ord(c)] > 1:
-                    return False
-            return True
+        if s == "":
+            return 0
+        result = 1
+        for i in range(len(s)):
+            for j in range(i+1, len(s)):
+                if len(s[i:j+1]) == len(set(s[i:j+1])):
+                    result = max(result, len(s[i:j+1]))
+                else:
+                    break
+        return result
 
-        maximum = 0
+# OR
+# getting rid of the empty string check [Accepted]
+    
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        result = 0
         for i in range(len(s)):
             for j in range(i, len(s)):
-                if checkAllUnique(i, j):
-                    maximum = max(maximum, j-i+1)
-        return maximum
+                if len(s[i:j+1]) == len(set(s[i:j+1])):
+                    result = max(result, len(s[i:j+1]))
+                else:
+                    break
+        return result
 
 
 inp_str = "abcabcbb"
@@ -44,7 +54,5 @@ print(obj.lengthOfLongestSubstring(inp_str))
 
 
 # Complexity Analysis:
-# Time complexity : O(n^3)
-# Space complexity : O(min(n, m)). We need O(k) space for checking a substring has no duplicate characters, 
-# where k is the size of the Set. The size of the Set is upper bounded by the size of the string n and the 
-# size of the charset/alphabet m.
+# Time complexity : O(n^3).
+# Space complexity : O(n).
