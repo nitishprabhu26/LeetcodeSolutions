@@ -1,48 +1,87 @@
-# Neetcode
-# https://youtu.be/XYQecbcd6_c
+# Approach 1: Check All Substrings
+# There's another optimization that we can do. Because the problem wants the longest palindrome, we can start 
+# by checking the longest-length substrings and iterate toward the shorter-length substrings. This way, the 
+# first time we find a substring that is a palindrome, we can immediately return it as the answer.
 
-# Approach 4: Expand Around Center
-# In fact, we could solve it in O(n^2) time using only constant space.
-# We observe that a palindrome mirrors around its center. Therefore, a palindrome can be expanded from its
-# center, and there are only 2n−1 such centers.
+# Algorithm:
+# 1.Create a helper method check(i, j) to determine if a substring is a palindrome.
+#   - To save space, we will not pass the substring itself. Instead, we will pass two indices that represent 
+#     the substring in question. The first character will be s[i] and the last character will be s[j - 1].
+#   - In this function, declare two pointers left = i and right = j - 1.
+#   - While left < right, do the following steps:
+#   - If s[left] != s[right], return false.
+#   - Otherwise, increment left and decrement right.
+#   - If we get through the while loop, return true.
+# 2.Use a for loop to iterate a variable 'length' starting from s.length until 1. This variable represents the 
+#   length of the substrings we are currently considering.
+# 3.Use a for loop to iterate a variable 'start' starting from 0 until and including s.length - length. This 
+#   variable represents the starting point of the substring we are currently considering.
+# 4.In each inner loop iteration, we are considering the substring starting at start until start + length. Pass 
+#   these values into check to see if this substring is a palindrome. If it is, return the substring.
 
-# why there are 2n−1 but not n centers? The reason is the center of a palindrome can be in between two letters.
-# Such palindromes have even number of letters (such as "abba") and its center are between the two 'b's.
 
 class Solution:
     def longestPalindrome(self, s: str) -> str:
-        res = ""
-        resLen = 0
+        def check(i, j):
+            left = i
+            right = j - 1
+            
+            while left < right:
+                if s[left] != s[right]:
+                    return False
+                
+                left += 1
+                right -= 1
+            
+            return True
+        
+        for length in range(len(s), 0, -1):
+            for start in range(len(s) - length + 1):
+                if check(start, start + length):
+                    return s[start : start + length]
 
-        for i in range(len(s)):
+        return ""
 
-            # odd length
-            # initialize left and right pointers to i
-            l, r = i, i
-            while l >= 0 and r < len(s) and s[l] == s[r]:
-                if (r-l+1) > resLen:
-                    res = s[l:r+1]
-                    resLen = r-l+1
-                l -= 1
-                r += 1
 
-            # even length
-            l, r = i, i+1
-            while l >= 0 and r < len(s) and s[l] == s[r]:
-                if (r-l+1) > resLen:
-                    res = s[l:r+1]
-                    resLen = r-l+1
-                l -= 1
-                r += 1
+# OR
+    
+class Solution:
+    def longestPalindrome(self, s: str) -> str:
+        def check(i, j):
+            left = i
+            right = j
+            
+            while left < right:
+                if s[left] != s[right]:
+                    return False
+                
+                left += 1
+                right -= 1
+            
+            return True
+        
+        for length in range(len(s), 0, -1):
+            for start in range(len(s) - length + 1):
+                if check(start, start + length - 1):
+                    return s[start:start + length]
 
-        return res
+        return ""
 
 
 s = "babad"
 obj = Solution()
 print(obj.longestPalindrome(s))
+    
 
 # Complexity Analysis:
-# Time complexity : O(n^2). Since expanding a palindrome around its center could take O(n) time, the overall
-# complexity is O(n^2)
-# Space complexity : O(1).
+# Given n as the length of s.
+# Time complexity : O(n^3). 
+# The two nested for loops iterate O(n^2) times. We check one substring of length n, two substrings of length 
+# n - 1, three substrings of length n - 2, and so on.
+# There are n substrings of length 1, but we don't check them all since any substring of length 1 is a 
+# palindrome, and we will return immediately.
+# In each iteration of the while loop, we perform a palindrome check. The cost of this check is linear with n 
+# as well, giving us a time complexity of O(n^3).
+# - Due to the optimizations of checking the longer length substrings first and exiting the palindrome check 
+#   early if we determine that a substring cannot be a palindrome, the practical runtime of this algorithm is 
+#   not too bad and better than earlier approach.
