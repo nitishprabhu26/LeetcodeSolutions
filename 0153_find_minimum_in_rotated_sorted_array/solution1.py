@@ -55,6 +55,9 @@ class Solution:
             # the least value is still somewhere to the right as we are still dealing with elements greater than 
             # nums[0] or nums[left]
             # if nums[mid] > nums[left]:
+            # OR
+            # if nums[mid] >= nums[0]:
+            # OR
             if nums[mid] > nums[0]:
                 left = mid + 1
             # if nums[0] is greater than the mid value then this means the smallest value is somewhere to the 
