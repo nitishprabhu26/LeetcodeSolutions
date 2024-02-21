@@ -1,5 +1,6 @@
 # Approach : Neetcode
 # https://youtu.be/nIVW4P8b1VA
+# Not inflection point approach
 
 from typing import List
 
