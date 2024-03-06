@@ -17,7 +17,8 @@ class Solution:
                 
         return l
     
-# OR - changing conditions
+    
+# OR - changing conditions 1
 class Solution:
     def removeDuplicates(self, nums: List[int]) -> int:
         i = 0
@@ -28,6 +29,16 @@ class Solution:
         nums[i] = nums[-1]
         return i + 1
     
+
+# OR - changing conditions 2
+class Solution:
+    def removeDuplicates(self, nums: List[int]) -> int:
+        i = 1
+        for j in range(1, len(nums)):
+            if nums[j] != nums[j-1]:
+                nums[i] = nums[j]
+                i += 1
+        return i
 
 # OR
 
